@@ -1,0 +1,11 @@
+links:
+  - slug: web
+    name: Web
+    url: /web/
+elsewhere:
+  - slug: twitter
+    name: Twitter
+    url: https://www.twitter.com/mylesb
+  - slug: github
+    name: GithHub
+    url: https://github.com/myles

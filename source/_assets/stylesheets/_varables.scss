@@ -1,0 +1,28 @@
+$background-color: $dark-gray;
+$action-color: $blue;
+
+// ####################################
+// Beaker
+// ####################################
+$beaker-color-one: #b3b3b3;
+$beaker-color-two: #1B75BB;
+$beaker-color-three: #2990e0;
+
+// ####################################
+// Masthead
+// ####################################
+$masthead-background: $dark-gray;
+$masthead-padding: 1em;
+$masthead-height: 60px;
+$masthead-color: transparentize(white, 0.3);
+$masthead-color-hover: white;
+$masthead-active-link-color: transparentize(white, 0.5);
+
+// ####################################
+// Imprint
+// ####################################
+// $imprint-background: desaturate(darken($action-color, 20%), 30%);
+$imprint-background: $dark-gray;
+$imprint-color: #fff;
+$imprint-link-color: transparentize($imprint-color, 0.6);
+$imprint-disclaimer-color: transparentize($imprint-color, 0.6);

@@ -1,0 +1,16 @@
+---
+layout: post
+type: web
+---
+
+<section class="content">
+    {{ content }}
+</section>
+
+<section class="results">
+    <h2>Results</h2>
+    
+    <div class="wrapper">
+        <iframe id="results_iframe" src="{{ page.results | prepend: site.weblab_url }}" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>

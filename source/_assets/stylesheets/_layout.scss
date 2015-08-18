@@ -1,0 +1,11 @@
+.main {
+	.wrapper {
+		@include outer-container;
+		@include padding(1.5em null);
+		
+		.page {
+			@include span-columns(10);
+			@include shift(1);
+		}
+	}
+}

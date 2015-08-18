@@ -1,0 +1,5 @@
+prose:
+  rooturl: 'source/_posts'
+  siteurl: 'http://mylesbraithwaite.org/'
+  relativeLinks: 'http://mylesbraithwaite.org/links.jsonp'
+  media: 'uploads'

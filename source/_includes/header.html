@@ -1,0 +1,29 @@
+<header class="masthead" role="banner">
+    <div class="wrapper">
+        <a href="/" class="logo">
+            <img class="iconic" data-src="{% asset_path beaker.svg %}">
+        </a>
+        
+        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+        
+        <nav role="navigation">
+            <ul id="js-navigation-menu" class="navigation-menu show">
+                <li class="nav-link site-title">
+                    <a href="/">{{ site.title }}</a>
+                </li>
+                {% for category in site.data.categories %}
+                <li class="nav-link {{ category.slug }}">
+                    <a href="/{{ category.slug }}/">{% if category.short %}{{ category.short }}{% else %}{{ category.title }}{% endif %}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        
+        <div class="elsewhere">
+            <ul id="js-elsewhere-menu" class="elsewhere-menu show">
+                {% for link in site.data.masthead-links.elsewhere %}
+                <li class="nav-link {{ list.slug }}"><a href="{{ link.url }}">{{ link.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</header>

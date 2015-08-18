@@ -1,0 +1,24 @@
+body {
+	background-color: $background-color;
+}
+
+.main {
+	background-color: #fff;
+}
+
+.iconic-beaker {
+	.iconic-beaker-measure-line {
+	  fill: $beaker-color-one;
+	  stroke: $beaker-color-one;
+	}
+
+	.iconic-beaker-fluid {
+	  fill: $beaker-color-two;
+	  stroke: $beaker-color-two;
+	}
+
+	.iconic-beaker-fluid-bubble {
+	  fill: $beaker-color-three;
+	  stroke: $beaker-color-three;
+	}
+}

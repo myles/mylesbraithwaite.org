@@ -1,0 +1,38 @@
+- slug: content
+  title: Content
+  links:
+    - slug: about
+      title: About
+      url: /about/
+    - slug: contact
+      title: Contact
+      url: /contact/
+    - slug: subscribe
+      title: Subscribe
+      url: /subscribe/
+
+- slug: follow-me
+  title: Follow Me
+  links:
+    - slug: facebook
+      title: Facebook
+      url: https://www.facebook.com/mylesbraithwaite
+    - slug: twitter
+      title: Twitter
+      url: https://www.twitter.com/mylesb
+    - slug: google-plus
+      title: Google+
+      url: https://plus.google.com/+MylesBraithwaite
+
+- slug: programming
+  title: Programming
+  links:
+    - slug: github
+      title: GitHub
+      url: https://www.github.com/myles
+    - slug: bitbucket
+      title: BitBucket
+      url: https://www.bitbucket.org/myles
+    - slug: codepen
+      title: CodePen
+      url: http://codepen.io/mylesb

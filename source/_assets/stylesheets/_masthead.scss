@@ -1,0 +1,134 @@
+.masthead {
+	background-color: $masthead-background;
+	border-bottom: 1px solid darken($masthead-background, 10);
+	min-height: $masthead-height;
+	width: 100%;
+	z-index: 999;
+	
+	.wrapper {
+		@include clearfix;
+		@include outer-container;
+		position: relative;
+		z-index: 9999;
+	}
+	
+	.logo {
+		float: left;
+    max-height: $masthead-height;
+    padding-left: $masthead-padding;
+    padding-right: 2em;
+		
+		.iconic-beaker {
+			@include size($masthead-height);
+			padding: .8em 0;
+		}
+	}
+	
+	.navigation-menu-button {
+		color: $masthead-color;
+		display: block;
+		float: right;
+		font-weight: 700;
+		line-height: $masthead-height;
+		margin: 0;
+		padding-right: 1em;
+		text-transform: uppercase;
+		
+    @include media($large-screen) {
+			display: none;
+    }
+		
+		&:focus,
+		&:hover {
+			color: $masthead-color-hover;
+		}
+	}
+	
+	nav, .elsewhere {
+		float: none;
+		min-height: $masthead-height;
+		z-index: 9999999;
+		
+		@include media($large-screen) {
+			float: left;
+		}
+	}
+	
+	ul {
+    -webkit-transform-style: preserve-3d;
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999;
+		
+		&.show {
+			display: block;
+		}
+		
+		@include media($large-screen) {
+			display: inline;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	
+	ul li.nav-link {
+		background: $masthead-background;
+		display: block;
+		line-height: $masthead-height;
+		overflow: hidden;
+		padding-right: .8em;
+		text-align: right;
+		width: 100%;
+		z-index: 9999;
+		
+		@include media($large-screen) {
+			background: transparent;
+			display: inline;
+			line-height: $masthead-height;
+			text-decoration: none;
+			width: auto;
+		}
+		
+		a {
+			color: $masthead-color;
+			display: inline-block;
+			font-weight: 400;
+			text-decoration: none;
+			
+			@include media($large-screen) {
+				padding-right: 1em;
+			}
+			
+			&:focus,
+			&:hover {
+				color: $masthead-color-hover;
+			}
+		}
+		
+		&.site-title a {
+			font-weight: 800;
+		}
+		
+		.active-nav-item a {
+	    border-bottom: 1px solid $masthead-active-link-color;
+	    padding-bottom: 3px;
+		}
+	}
+	
+	.elsewhere {
+		clear: both;
+		display: none;
+		height: $masthead-height;
+		
+		@include media($large-screen) {
+			display: inline;
+			background: transparent;
+			clear: none;
+			float: right;
+		}
+	}
+}

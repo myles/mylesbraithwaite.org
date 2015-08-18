@@ -1,0 +1,21 @@
+<footer class="imprint" role="contentinfo">
+    <div class="logo">
+        <a href="/" class="logo" title="{{ site.title }}">
+            <img class="iconic" data-src="{% asset_path beaker.svg %}" alt="{{ site.title }}">
+        </a>
+    </div>
+    <div class="links">
+        {% for section in site.data.imprint-links %}
+        <ul>
+            <li class="section section-{{ section.slug }}"><h3>{{ section.title }}</h3></li>
+            {% for link in section.links %}
+            <li class="link link-{{ link.slug }}"><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+    
+    <hr>
+    
+    <p>Copyright &copy; {{ site.time | date: "%Y" }}</p>
+</footer>

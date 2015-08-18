@@ -1,0 +1,38 @@
+gems:
+  - bourbon
+  - neat
+  - jekyll-sitemap
+
+# Structure configuration
+source: source
+destination: build
+
+assets:
+  dirname: assets
+  baseurl: /assets/
+  cachebust: soft
+  source:
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+  debug: true
+
+# Site settings
+title: Myles' Lab
+description: Myles Braithwaite's Programming Laboratory.
+permalink: /post/:year-:month-:day/:title/
+
+# Author information
+author: Myles Braithwaite
+email: me@mylesbraithwaite.org
+
+# URL settings
+url: "http://127.0.0.1:4000"
+baseurl: ""
+cdn_url: ""
+cdn_baseurl: "uploads"
+weblab_url: "http://lab.mylesbraithwaite.com"
+
+# Build settings
+markdown: kramdown

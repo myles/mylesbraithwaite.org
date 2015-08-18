@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+{% assign category_data = site.data.categories | where:"slug", page.category %}
+{% assign category = category_data | first %}
+
+<div class="breadcrumb">
+    <a href="/">Home</a>
+    {% if page.category %}
+    {% if category.short %}
+    <a href="/{{ category.slug }}/">{{ category.short }}</a>
+    {% else %}
+    <a href="/{{ category.slug }}/">{{ category.title }}</a>
+    {% endif %}
+    {% endif %}
+    {% if page.simpletitle %}
+    <a href="{{ page.url }}">{{ page.simpletitle }}</a>
+    {% else %}
+    <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+</div>
+
+<article class="type-{{ page.type }}">
+    <!-- <p class="type">{{ page.type }}</p> -->
+    
+    <header>
+        <h1>{{ page.title }}</h1>
+        
+        {% if page.lead %}<h2>{{ page.lead }}</h2>{% endif %}
+        
+        <p class="meta">
+            Published: {{ page.date | date_to_long_string }}
+            {% if page.tags %}
+            | Tags: {% for tag in page.tags %} {{ tag }}{% endfor %}
+            {% endif %}
+        </p>
+    </header>
+    
+    {{ content }}
+</article>
