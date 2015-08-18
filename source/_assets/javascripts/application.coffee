@@ -14,15 +14,12 @@ $(document).ready ->
       return
     return
   
-  iframe = document.getElementById('results_iframe')
-  overlay = iframeOverlay.createOverlay(iframe)
-  
   $('.results iframe').on 'click', ->
-    overlay.resume()
+    $(this).plainOverlay('hide')
     return
   
   $('.results iframe').on 'mouseleave', ->
-    overlay.pause()
+    $(this).plainOverlay('show')
     return
-    
+  
   return

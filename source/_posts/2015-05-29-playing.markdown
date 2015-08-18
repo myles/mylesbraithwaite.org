@@ -37,7 +37,7 @@ $(document).ready(function () {
     'use strict';
 
     var user = "mylesb",
-        apiKey = "986ccd47b5f8ec7df9b708ff703aa72e";
+        apiKey = "";
 
     getLatestTrack(user, apiKey);
 

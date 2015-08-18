@@ -94,6 +94,13 @@ article {
 		}
 	}
 	
+	.highlight pre {
+		@include padding(.5em 1em);
+		
+		border: 1px solid $dark-gray;
+		background-color: lighten($dark-gray, 80%);
+	}
+	
 	hr {
 		width: 3em;
 	}
