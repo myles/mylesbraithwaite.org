@@ -18,17 +18,13 @@
         
         <link rel="stylesheet" href="{{ site.baseurl }}{% asset_path application.css %}">
         
-        <!--
-            TODO Add the Favicon here.
-    		<link rel="icon" type="image/png" href="{# asset_path favicon.png #}">
-		
-    		<link rel="apple-touch-icon" type="image/png"href="{# asset_path favicon.png #}">
-        -->
+        {% include head_favicons.html %}
         
         <link rel="alternate" type="application/atom+xml" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.title }} | Feed">
     </head>
     <body>
         {% include header.html %}
+        
         <div class="main">
             <div class="wrapper">
                 <div class="page">
@@ -36,7 +32,9 @@
                 </div>
             </div>
         </div>
+        
         {% include footer.html %}
+        
         <script type="text/javascript" src="{{ site.baseurl }}{% asset_path application.js %}"></script>
     </body>
 </html>

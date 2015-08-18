@@ -1,1 +1,10 @@
+url: "http://mylesbraithwaite.org"
 cdn_url: "http://cdn.mylesbraithwaite.org"
+cdn_baseurl: "uploads"
+weblab_url: "http://lab.mylesbraithwaite.com"
+
+assets:
+  js_compressor: uglifier
+  css_compressor: yui
+  debug: false
+  gzip: [ text/css, application/javascript, image/svg+xml ]

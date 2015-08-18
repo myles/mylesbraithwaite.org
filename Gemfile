@@ -11,6 +11,7 @@ gem 'neat'
 gem 'sass'
 gem 'uglifier'
 gem 'coffee-script'
+gem 'yui-compressor'
 
 gem 'puma'
 gem 'rack-contrib'
