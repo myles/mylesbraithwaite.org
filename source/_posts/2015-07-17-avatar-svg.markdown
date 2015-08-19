@@ -3,7 +3,7 @@ layout: post_web
 date: 2015-07-17 20:39
 public: true
 category: web
-tags: javascript, css, svg, html
+tags: [javascript, css, svg, html]
 title: Quick Change Trick with SVG and JavaScript
 results: /avatar-svg-fun/
 ---

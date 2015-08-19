@@ -1,0 +1,59 @@
+---
+layout: post_web
+date: 2015-05-16 17:30
+public: true
+category: web
+tags: [javascript, css, json, html]
+title: Styling a SVG OpenStreetMap Export with CSS
+lead: Using SVG-Inject to make a custom map style.
+results: /funmaptime/
+---
+
+```css
+.map {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.map .hacklab-to {
+  fill: rgb(58, 167, 220);
+  stroke: rgb(41, 47, 50);
+  background-image: url(hacklabto.svg);
+}
+
+.map .road {
+  fill: none;
+  stroke-width: 13.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: rgb(100%,100%,100%);
+  stroke-opacity: 1;
+  stroke-miterlimit: 4;
+}
+
+.map .highway {
+  fill: none;
+  stroke-width: 18;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: rgb(80%,63.137255%,41.568627%);
+  stroke-opacity: 1;
+  stroke-miterlimit: 4;
+}
+
+.map .building {
+  fill-rule: nonzero;
+  fill: rgb(85.098039%,81.568627%,78.823529%);
+  fill-opacity: 1;
+  stroke-width: 0.75;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke: rgb(72.54902%,66.27451%,61.176471%);
+  stroke-opacity: 1;
+  stroke-miterlimit: 4;
+}
+```

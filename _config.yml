@@ -32,7 +32,9 @@ url: "http://127.0.0.1:4000"
 baseurl: ""
 cdn_url: ""
 cdn_baseurl: "uploads"
-weblab_url: "http://lab.mylesbraithwaite.com"
+weblab_url: "http://127.0.0.1:8000"
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: []

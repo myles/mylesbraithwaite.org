@@ -1,0 +1,19 @@
+.post-list {
+	h2, h3 {
+		margin-bottom: 0;
+		
+		a {
+			color: $base-font-color;
+		}
+	}
+	
+	.year {}
+	
+  .month {
+  	margin-left: 2em;
+  }
+	
+	ul {
+		margin-left: 2em;
+	}
+}

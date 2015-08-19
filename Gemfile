@@ -10,6 +10,7 @@ gem 'neat'
 
 gem 'sass'
 gem 'uglifier'
+gem 'redcarpet'
 gem 'coffee-script'
 gem 'yui-compressor'
 

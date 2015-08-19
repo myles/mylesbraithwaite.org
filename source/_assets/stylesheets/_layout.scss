@@ -1,11 +1,34 @@
 .main {
 	.wrapper {
 		@include outer-container;
-		@include padding(1.5em null);
 		
 		.page {
-			@include span-columns(10);
-			@include shift(1);
+			@include margin(null 1em);
+			@include padding(1em null);
+		}
+	}
+}
+
+@include media($large-screen-up) {
+	* {
+		margin: 0;
+	}
+
+	html, body {
+		height: 100%;
+	}
+
+	.main {
+		min-height: 100%;
+		height: auto !important;
+	
+		.wrapper {
+			@include padding(1.5em null);
+		
+			.page {
+				@include span-columns(10);
+				@include shift(1);
+			}
 		}
 	}
 }

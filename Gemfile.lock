@@ -124,6 +124,7 @@ DEPENDENCIES
   neat
   puma
   rack-contrib
+  redcarpet
   sass
   uglifier
   yui-compressor

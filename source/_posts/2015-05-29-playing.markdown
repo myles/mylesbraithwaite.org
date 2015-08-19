@@ -3,7 +3,7 @@ layout: post_web
 date: 2015-05-29 11:38
 public: true
 category: web
-tags: javascript, css, json, html
+tags: [javascript, css, json, html]
 title: Currently Playing on Last.fm JavaScript Widget
 lead: Playing around with jQuery and Last.fm's JavaScript API.
 results: /playing/
