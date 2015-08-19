@@ -1,5 +1,6 @@
-$base-background-color: $dark-gray;
 $action-color: $blue;
+$base-background-color: $dark-gray;
+$main-background-color: #fff;
 
 // ####################################
 // Beaker
@@ -26,3 +27,16 @@ $imprint-background: $dark-gray;
 $imprint-color: #fff;
 $imprint-link-color: transparentize($imprint-color, 0.6);
 $imprint-disclaimer-color: transparentize($imprint-color, 0.6);
+
+// ####################################
+// Breadcrumb
+// ####################################
+$breadcrumb-border-color: $base-border-color;
+$breadcrumb-border: 1px solid $breadcrumb-border-color;
+$breadcrumb-height: $base-spacing * 1.5;
+$breadcrumb-arrow-color: $breadcrumb-border-color;
+$breadcrumb-background: #FFF;
+$breadcrumb-inactive-hover-color: $breadcrumb-background;
+$breadcrumb-color: $medium-gray;
+$breadcrumb-color-hover: $action-color;
+$breadcrumb-color-active: $breadcrumb-color;

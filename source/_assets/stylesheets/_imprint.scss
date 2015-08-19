@@ -14,9 +14,11 @@
 	.links {
 		@include clearfix;
     margin-bottom: $base-spacing;
+		display: none;
 
     @include media($medium-screen) {
 			@include shift(3);
+			display: block;
     }
 	}
 	
