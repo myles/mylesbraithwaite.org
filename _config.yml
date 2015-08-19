@@ -2,6 +2,7 @@ gems:
   - bourbon
   - neat
   - jekyll-sitemap
+  - jekyll-archives
 
 # Structure configuration
 source: source
@@ -18,10 +19,20 @@ assets:
     - _assets/stylesheets
   debug: true
 
+jekyll-archives:
+  enabled: all
+  layout: 'archive'
+  permalinks:
+    year: '/year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/:name/'
+
 # Site settings
 title: Myles' Lab
 description: Myles Braithwaite's Programming Laboratory.
-permalink: /post/:year-:month-:day/:title/
+permalink: /:year/:month/:day/:title/
 
 # Author information
 author: Myles Braithwaite

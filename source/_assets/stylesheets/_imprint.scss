@@ -73,5 +73,10 @@
     margin: auto;
     max-width: 35em;
     text-align: center;
+		
+	  .iconic {
+	    @include size(1.5em);
+	    vertical-align: middle;
+	  }
 	}
 }

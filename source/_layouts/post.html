@@ -32,8 +32,16 @@ layout: default
         <p class="meta">
             Published: {{ page.date | date_to_long_string }}
             {% if page.tags %}
-            | Tags: {% for tag in page.tags %} {{ tag }}{% endfor %}
+            | Tags:
             {% endif %}
+            {% for tag_slug in page.tags %}
+                {% assign tag_data = site.data.tags | where:"slug", tag_slug %}
+                {% assign tag = tag_data | first %}
+                
+                {% if forloop.last %} and{% endif %}
+                
+                {% if tag %}<a href="/tag/{{ tag.slug }}/" rel="tag">{{ tag.title }}</a>{% else %}<a href="/tag/{{ tag_slug }}/" rel="tag">{{ tag_slug }}</a>{% endif %}{% if forloop.last == false %},{% endif %}
+            {% endfor %}
         </p>
     </header>
     

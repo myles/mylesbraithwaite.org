@@ -1,0 +1,40 @@
+---
+layout: default
+title: Tags
+permalink: /tag/
+---
+
+<div class="breadcrumb">
+    <a href="/">Home</a>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+</div>
+
+<article class="type-page">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    
+    <section class="content">
+        <ul class="tag-list">
+            {% for tag_info in site.tags | sort %}
+            {% assign tag_slug = tag_info | first %}
+            {% assign tag_count = tag_info | last | size %}
+            {% assign tag_size = tag_count | times: 100 | divided_by: site.tags.size | plus: 80 %}
+            {% assign tag_data = site.data.tags | where:"slug", tag_slug %}
+            {% assign tag = tag_data | first %}
+            <li style="font-size: {{ tag_size }}%">
+                {% if tag %}
+                <a href="/tag/{{ tag.slug }}/">
+                    {{ tag.title }}
+                </a>
+                {% else %}
+                <a href="/tag/{{ tag_slug }}/">
+                    {{ tag_slug }}
+                </a>
+                {% endif %}
+                <small>{{ tag_count }}</small>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</article>

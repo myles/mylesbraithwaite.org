@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+{% assign tag_data = site.data.tags | where:"slug", page.title %}
+{% assign tag = tag_data | first %}
+
+{% assign category_data = site.data.categories | where:"slug", page.type %}
+{% assign category = category_data | first %}
+
+<div class="breadcrumb">
+    <a href="/">Home</a>
+    
+    {% if page.type == 'day' %}
+        <a href="{{ page.url }}">{{ page.date | date: "%B %-d, %Y" }}</a>
+    {% endif %}
+    
+    {% if page.type == 'tag' %}
+        <a href="/tag/">Tags</a>
+        {% if tag %}
+        <a href="{{ page.url }}">{{ tag.title }}</a>
+        {% else %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+        {% endif %}
+    {% endif %}
+    
+    {% if page.type == 'category' %}
+        {% if category.short %}
+            <a href="{{ page.url }}">{{ category.short }}</a>
+        {% else %}
+            <a href="{{ page.url }}">{{ category.title }}</a>
+        {% endif %}
+    {% endif %}
+</div>
+
+<article class="type-page">
+    <header>
+        {% if page.type == 'day' %}
+            <h1>Archive for {{ page.date | date: "%B %-d, %Y" }}</h1>
+        {% endif %}
+        {% if page.type == 'tag' %}
+            <h1><strong>{{ tag.title }}</strong></h1>
+            
+            {% if page.subtitle %}
+                <h2>{{ page.subtitle }}</h2>
+            {% endif %}
+        {% endif %}
+        {% if page.type == 'category' %}
+            <h1>{{ category.title }}</h1>
+            
+            {% if category.subtitle %}
+                <h2>{{ category.subtitle }}</h2>
+            {% endif %}
+        {% endif %}
+    </header>
+    
+    <section class="content">
+        {% if page.type == 'day' %}
+            <ul>
+                {% for post in page.posts %}
+                    <li class="post post-type-{{ post.categories | first }}"><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date: "%-d %b, %Y" }}</small></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            {% include post_list.html posts=page.posts %}
+        {% endif %}
+    </section>
+</article>

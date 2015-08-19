@@ -7,18 +7,28 @@ body {
 }
 
 .iconic-beaker {
+	.iconic-beaker-glass {
+		fill: $beaker-color-glass;
+		stroke: $beaker-color-glass;
+	}
+	
 	.iconic-beaker-measure-line {
-	  fill: $beaker-color-one;
-	  stroke: $beaker-color-one;
+	  fill: $beaker-color-measure-line;
+	  stroke: $beaker-color-measure-line;
 	}
 
 	.iconic-beaker-fluid {
-	  fill: $beaker-color-two;
-	  stroke: $beaker-color-two;
+	  fill: $beaker-color-fluid;
+	  stroke: $beaker-color-fluid;
 	}
 
 	.iconic-beaker-fluid-bubble {
-	  fill: $beaker-color-three;
-	  stroke: $beaker-color-three;
+	  fill: $beaker-color-bubble;
+	  stroke: $beaker-color-bubble;
 	}
+}
+
+.iconic-heart * {
+  fill: $heart-color;
+	stroke: $heart-color;
 }

@@ -3,6 +3,10 @@ module.exports = function (grunt) {
 	
     grunt.registerTask('build', ['jekyll:build']);
     
+    grunt.registerTask('staging', [
+        'jekyll:staging'
+    ]);
+    
 	grunt.registerTask('deploy', [
         'clean',
         'jekyll:prod',

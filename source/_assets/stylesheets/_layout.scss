@@ -1,4 +1,15 @@
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
 .main {
+	min-height: 100%;
+	height: auto !important;
+	
 	.wrapper {
 		@include outer-container;
 		
@@ -10,18 +21,7 @@
 }
 
 @include media($large-screen-up) {
-	* {
-		margin: 0;
-	}
-
-	html, body {
-		height: 100%;
-	}
-
 	.main {
-		min-height: 100%;
-		height: auto !important;
-	
 		.wrapper {
 			@include padding(1.5em null);
 		
