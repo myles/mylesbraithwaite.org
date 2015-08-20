@@ -2,5 +2,10 @@
   title: JavaScript
 - slug: css
   title: CSS
+  full: Cascading Style Sheets
 - slug: html
   title: HTML
+  full: HyperText Markup Language
+- slug: svg
+  title: SVG
+  full: Scalable Vector Graphics

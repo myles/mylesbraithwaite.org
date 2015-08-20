@@ -9,11 +9,11 @@
         <nav role="navigation">
             <ul id="js-navigation-menu" class="navigation-menu show">
                 <li class="nav-link site-title">
-                    <a href="/">{{ site.title }}</a>
+                    <a href="/">{{ site.title | improve }}</a>
                 </li>
                 {% for category in site.data.categories %}
                 <li class="nav-link {{ category.slug }}">
-                    <a href="/{{ category.slug }}/">{% if category.short %}{{ category.short }}{% else %}{{ category.title }}{% endif %}</a></li>
+                    <a href="/{{ category.slug }}/">{% if category.short %}{{ category.short | improve }}{% else %}{{ category.title | improve }}{% endif %}</a></li>
                 {% endfor %}
             </ul>
         </nav>
@@ -21,7 +21,7 @@
         <div class="elsewhere">
             <ul id="js-elsewhere-menu" class="elsewhere-menu show">
                 {% for link in site.data.masthead-links.elsewhere %}
-                <li class="nav-link {{ list.slug }}"><a href="{{ link.url }}">{{ link.name }}</a></li>
+                <li class="nav-link {{ list.slug }}"><a href="{{ link.url }}">{{ link.name | improve }}</a></li>
                 {% endfor %}
             </ul>
         </div>

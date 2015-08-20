@@ -9,7 +9,7 @@
         <ul>
             <li class="section section-{{ section.slug }}"><h3>{{ section.title }}</h3></li>
             {% for link in section.links %}
-            <li class="link link-{{ link.slug }}"><a href="{{ link.url }}">{{ link.title }}</a></li>
+            <li class="link link-{{ link.slug }}"><a href="{{ link.url }}">{{ link.title | improve }}</a></li>
             {% endfor %}
         </ul>
         {% endfor %}

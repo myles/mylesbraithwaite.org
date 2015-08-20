@@ -5,51 +5,72 @@ layout: default
 {% assign tag_data = site.data.tags | where:"slug", page.title %}
 {% assign tag = tag_data | first %}
 
-{% assign category_data = site.data.categories | where:"slug", page.type %}
+{% assign category_data = site.data.categories | where:"slug", page.title %}
 {% assign category = category_data | first %}
 
 <div class="breadcrumb">
     <a href="/">Home</a>
     
+    {% if page.type =='year' %}
+        <a href="{{ page.url }}">{{ page.date | date: "%Y" }}</a>
+    {% endif %}
+    
+    {% if page.type == 'month' %}
+        <a href="{{ page.date | date: "/%Y/" }}">{{ page.date | date: "%Y" }}</a>
+        <a href="{{ page.url }}">{{ page.date | date: "%B" }}</a>
+    {% endif %}
+    
     {% if page.type == 'day' %}
-        <a href="{{ page.url }}">{{ page.date | date: "%B %-d, %Y" }}</a>
+        <a href="{{ page.date | date: "/%Y/" }}">{{ page.date | date: "%Y" }}</a>
+        <a href="{{ page.date | date: "/%Y/%m/" }}">{{ page.date | date: "%B" }}</a>
+        <a href="{{ page.url }}">{{ page.date | date: "%-d" }}</a>
     {% endif %}
     
     {% if page.type == 'tag' %}
         <a href="/tag/">Tags</a>
         {% if tag %}
-        <a href="{{ page.url }}">{{ tag.title }}</a>
+        <a href="{{ page.url }}">{{ tag.title | improve }}</a>
         {% else %}
-        <a href="{{ page.url }}">{{ page.title }}</a>
+        <a href="{{ page.url }}">{{ page.title | improve }}</a>
         {% endif %}
     {% endif %}
     
     {% if page.type == 'category' %}
         {% if category.short %}
-            <a href="{{ page.url }}">{{ category.short }}</a>
+            <a href="{{ page.url }}">{{ category.short | improve }}</a>
         {% else %}
-            <a href="{{ page.url }}">{{ category.title }}</a>
+            <a href="{{ page.url }}">{{ category.title | improve }}</a>
         {% endif %}
     {% endif %}
 </div>
 
 <article class="type-page">
     <header>
-        {% if page.type == 'day' %}
-            <h1>Archive for {{ page.date | date: "%B %-d, %Y" }}</h1>
+        {% if page.type =='year' %}
+            <h1>Archive for {{ page.date | date: "%Y" }}</h1>
         {% endif %}
+    
+        {% if page.type == 'month' %}
+            <h1>Archive for {{ page.date | date: "%B %Y" }}</h1>
+        {% endif %}
+        
+        {% if page.type == 'day' %}
+            <h1>Archive for {{ page.date | date: "%-d %B, %Y" }}</h1>
+        {% endif %}
+        
         {% if page.type == 'tag' %}
-            <h1><strong>{{ tag.title }}</strong></h1>
+            <h1><strong>{{ tag.title | improve }}</strong></h1>
             
             {% if page.subtitle %}
-                <h2>{{ page.subtitle }}</h2>
+                <h2>{{ page.subtitle | improve }}</h2>
             {% endif %}
         {% endif %}
+        
         {% if page.type == 'category' %}
-            <h1>{{ category.title }}</h1>
+            <h1>{{ category.title | improve }}</h1>
             
             {% if category.subtitle %}
-                <h2>{{ category.subtitle }}</h2>
+                <h2>{{ category.subtitle | improve }}</h2>
             {% endif %}
         {% endif %}
     </header>
@@ -58,7 +79,7 @@ layout: default
         {% if page.type == 'day' %}
             <ul>
                 {% for post in page.posts %}
-                    <li class="post post-type-{{ post.categories | first }}"><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date: "%-d %b, %Y" }}</small></li>
+                    <li class="post post-type-{{ post.categories | first }}"><a href="{{ post.url }}">{{ post.title | improve }}</a> <small>{{ post.date | date: "%-d %b, %Y" }}</small></li>
                 {% endfor %}
             </ul>
         {% else %}
