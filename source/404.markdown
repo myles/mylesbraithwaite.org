@@ -1,0 +1,14 @@
+---
+layout: page
+title: 404 Error - Page Not Found
+---
+
+You’re in a room. It’s dark. Silent. As your eyes become accustomed to the gloom you notice something on the wall opposite. Squinting, you read:
+
+404 Page Not Found
+
+It might be written in blood or something. I don’t know. This story’s gone on too long already.
+
+What I’m trying to say is the page you’re looking for, <code>{{ page.url }}</code>, can’t be found. Sorry.
+
+You're probably looking for the most recent blog post called {% for post in site.posts | first %}<a href="{{ page.url }}">{{ post.title }}</a>{% endfor %}; but if you're completely lost, try the <a href="/">home page</a>. If you think I’ve made some kind of mistake (as unlikely as that sounds) you should <a href="mailto:{{ site.email }}">get in touch</a>.
