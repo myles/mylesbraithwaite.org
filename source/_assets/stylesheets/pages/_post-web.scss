@@ -24,8 +24,6 @@ article.type-web {
 			iframe {
 				@include position(absolute, 0px null null 0px);
 				
-				margin: 1em;
-				
 				overflow: hidden;
 				
 				width: 100%;
