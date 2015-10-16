@@ -9,12 +9,13 @@
 @import "layout";
 @import "global";
 
-@import "masthead";
-@import "imprint";
-@import "post-list";
-@import "tag-list";
-@import "breadcrumbs";
-@import "syntax-highlighting";
+@import "components/imprint";
+@import "components/masthead";
+@import "components/breadcrumbs";
+@import "components/syntax-highlighting";
 
-@import "post";
-@import "post-web";
+@import "pages/post-list";
+@import "pages/tag-list";
+
+@import "pages/post";
+@import "pages/post-web";
