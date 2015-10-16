@@ -3,6 +3,15 @@ article.type-web {
 	$iframe-height: 75%;
 	
   .results {
+		.demo-link {
+			display: block;
+			width: 100%;
+			color: #fff;
+			padding: .5em 0 .5em 1em;
+			border-top-left-radius: 1em;
+			background-color: $action-color;
+		}
+		
 		.wrapper {
 	  	height: 80vh;
 			overflow: hidden;

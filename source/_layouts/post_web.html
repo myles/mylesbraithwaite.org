@@ -10,6 +10,8 @@ type: web
 <section class="results">
     <h2>Results</h2>
     
+    <a class="demo-link" href="{{ page.results | prepend: site.weblab_url }}" title="{{ page.title }} Demo">Demo</a>
+    
     <div class="wrapper">
         <iframe id="results_iframe" src="{{ page.results | prepend: site.weblab_url }}" frameborder="0" allowfullscreen scrolling="no"></iframe>
     </div>
