@@ -14,15 +14,7 @@ $(document).ready ->
       return
     return
   
-  $('.results iframe').on 'click', ->
-    $(this).plainOverlay('hide')
-    return
-  
-  $('.results iframe').on 'mouseleave', ->
-    $(this).plainOverlay('show')
-    return
-  
-  $('.demo-link'). on 'click', ->
+  $('.demo-link').on 'click', ->
     window.open $(this).attr('href'), $(this).attr('title'), 'width=800,height=600,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0'
     return false
   
