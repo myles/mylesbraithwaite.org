@@ -3,11 +3,14 @@ module.exports = function (grunt) {
         options: {
             coast: true,
             firefox: true,
-            firefoxRound: true,
-            androidHomescreen: true
+            windowsTile: true,
+            tileBlackWhite: true,
+            tileColor: '#477dca',
+            androidHomescreen: true,
+            appleTouchBackgroundColor: 'none'
         },
         icons: {
-            src: 'source/_assets/images/beaker-512x512.png',
+            src: 'source/_assets/images/beaker.png',
             dest: 'build/assets/icons/'
         }
     };
