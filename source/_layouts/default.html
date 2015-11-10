@@ -24,6 +24,8 @@
         {% include head_favicons.html %}
         
         <link rel="alternate" type="application/atom+xml" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.title }} | Feed">
+        
+        {% include head_twitter.html %}
     </head>
     <body>
         {% include header.html %}
