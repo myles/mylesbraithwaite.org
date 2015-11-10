@@ -1,4 +1,7 @@
-#= require_tree .
+#= require jquery
+#= require iconic
+
+#= require analytics
 
 $(document).ready ->
   menuToggle = $('#js-mobile-menu').unbind()

@@ -38,6 +38,19 @@
         
         {% include footer.html %}
         
+        <script type="text/javascript">
+            window.MylesLabPageDetails = {
+                {% if page.title %}title: {{ page.title | jsonify }},{% endif %}
+                {% if page.date %}date: {{ page.date | jsonify }},{% endif %}
+                {% if page.tags %}tags: {{ page.tags | jsonify }},{% endif %}
+                {% if page.category %}
+                {% assign category_data = site.data.categories | where:"slug", page.category %}
+                category: {{ category_data | jsonify }},
+                {% endif %}
+                url: "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+            }
+        </script>
+        
         <script type="text/javascript" src="{{ site.baseurl }}{% asset_path application.js %}"></script>
     </body>
 </html>
