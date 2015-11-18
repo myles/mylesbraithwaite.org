@@ -1,7 +1,7 @@
 <header class="masthead" role="banner">
     <div class="wrapper">
-        <a href="/" class="logo">
-            <img class="iconic" data-src="{% asset_path beaker.svg %}">
+        <a href="/" class="logo" title="{{ site.description | improve }}">
+            <img class="iconic" data-src="{% asset_path beaker.svg %}" alt="{{ site.title | improve }}">
         </a>
         
         <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
@@ -9,11 +9,20 @@
         <nav role="navigation">
             <ul id="js-navigation-menu" class="navigation-menu show">
                 <li class="nav-link site-title">
-                    <a href="/">{{ site.title | improve }}</a>
+                    <a href="/" title="{{ site.description | improve }}">
+                        {{ site.title | improve }}
+                    </a>
                 </li>
                 {% for category in site.data.categories %}
                 <li class="nav-link {{ category.slug }}">
-                    <a href="/{{ category.slug }}/">{% if category.short %}{{ category.short | improve }}{% else %}{{ category.title | improve }}{% endif %}</a></li>
+                    <a href="/{{ category.slug }}/" {% if category.short %}title="{{ category.title }}"{% endif %}>
+                        {% if category.short %}
+                        {{ category.short | improve }}
+                        {% else %}
+                        {{ category.title | improve }}
+                        {% endif %}
+                    </a>
+                </li>
                 {% endfor %}
             </ul>
         </nav>
