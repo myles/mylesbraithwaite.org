@@ -15,10 +15,15 @@ module.exports = function (grunt) {
 				auto: true
 			}
 		},
+        development: {
+            options: {
+                build: true,
+                config: '_config.yml'
+            }
+        },
         staging: {
             options: {
                 build: true,
-                watch: true,
                 config: '_config.yml,_config.staging.yml',
                 dest: '~/Sites/sites/mylesbraithwaite-org/html/'
             }

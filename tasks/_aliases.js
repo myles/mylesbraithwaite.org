@@ -1,10 +1,15 @@
 module.exports = function (grunt) {
-	grunt.registerTask('run', ['jekyll:serve']);
+	grunt.registerTask('run', [
+        'jekyll:development',
+        'connect',
+        'watch:development'
+    ]);
 	
     grunt.registerTask('build', ['jekyll:build']);
     
     grunt.registerTask('staging', [
-        'jekyll:staging'
+        'jekyll:staging',
+        'watch:staging'
     ]);
     
 	grunt.registerTask('deploy', [
