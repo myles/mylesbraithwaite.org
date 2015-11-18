@@ -7,10 +7,14 @@ module.exports = function (grunt) {
             tileBlackWhite: true,
             tileColor: '#477dca',
             androidHomescreen: true,
-            appleTouchBackgroundColor: 'none'
+            appleTouchBackgroundColor: '#477dca',
+            precomposed: false,
+            // indent: '        ',
+            // html: 'source/_includes/head_favicons.html',
+            // HTMLPrefix: '/assets/icons/'
         },
         icons: {
-            src: 'source/_assets/images/beaker.png',
+            src: './source/_assets/images/beaker.png',
             dest: 'build/assets/icons/'
         }
     };
