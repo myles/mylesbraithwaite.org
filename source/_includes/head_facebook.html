@@ -1,0 +1,16 @@
+
+        {% if page.title %}
+        <meta property="og:title" content="{{ page.title }}">
+        {% else %}
+        <meta property="og:title" content="{{ site.title }}">
+        {% endif %}
+        
+        <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        
+        <meta property="og:type" content="website">
+        
+        {% if page.tease %}
+        <meta property="og:description" content="{{ page.tease }}">
+        {% else %}
+        <meta property="og:description" content="{{ site.description }}">
+        {% endif %}

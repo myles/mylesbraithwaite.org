@@ -1,16 +1,19 @@
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@MylesLab">
-<meta name="twitter:creator" content="@MylesB">
-{% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}">
-{% else %}
-    <meta name="twitter:title" content="{{ site.title }}">
-{% endif %}
-{% if page.url %}
-    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-{% endif %}
-{% if page.tease %}
-    <meta name="twitter:description" content="{{ page.tease }}">
-{% else %}
-    <meta name="twitter:description" content="{{ site.description }}">
-{% endif %}
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@MylesLab">
+        <meta name="twitter:creator" content="@MylesB">
+        {% if page.title %}
+        <meta name="twitter:title" content="{{ page.title }}">
+        {% else %}
+        <meta name="twitter:title" content="{{ site.title }}">
+        {% endif %}
+        
+        {% if page.url %}
+        <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        {% endif %}
+        
+        {% if page.tease %}
+        <meta name="twitter:description" content="{{ page.tease }}">
+        {% else %}
+        <meta name="twitter:description" content="{{ site.description }}">
+        {% endif %}
