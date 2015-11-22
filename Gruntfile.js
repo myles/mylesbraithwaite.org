@@ -1,18 +1,17 @@
 module.exports = function(grunt) {
-	grunt.initConfig({
-		aws: grunt.file.readJSON('.aws.json'),
-		config: grunt.file.readYAML('_config.yml')
+    grunt.initConfig({
+        aws: grunt.file.readJSON('.aws.json'),
+        config: grunt.file.readYAML('_config.yml')
     });
-	
-	grunt.loadNpmTasks('grunt-aws');
-	grunt.loadNpmTasks('grunt-exec');
-	grunt.loadNpmTasks('grunt-rsync');
-	grunt.loadNpmTasks('grunt-jekyll');
-    grunt.loadNpmTasks('grunt-favicons');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    
+
+    // Load all the grunt packages.
+    Object.keys(
+        require('./package.json').devDependencies
+    ).forEach(function (dep) {
+        if (dep.substring(0, 6) === 'grunt-') {
+            grunt.loadNpmTasks(dep);
+        }
+    });
+
     grunt.task.loadTasks('./tasks/');
 };
