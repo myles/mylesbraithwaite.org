@@ -1,17 +1,3 @@
----
-layout: post_web
-date: 2015-05-29 11:38
-public: true
-category: web
-tags: [javascript, css, json, html]
-title: Currently Playing on Last.fm JavaScript Widget
-lead: Playing around with jQuery and Last.fm's JavaScript API.
-demo: index.html
----
-
-This is a simple JavaScript script that access Last.fm's JSON API and get's the current track, artist, and album image.
-
-{% highlight javascript %}
 function getLatestTrack(user, apiKey) {
     'use strict';
 
@@ -37,7 +23,7 @@ $(document).ready(function () {
     'use strict';
 
     var user = "mylesb",
-        apiKey = "";
+        apiKey = "986ccd47b5f8ec7df9b708ff703aa72e";
 
     getLatestTrack(user, apiKey);
 
@@ -45,4 +31,3 @@ $(document).ready(function () {
         getLatestTrack(user, apiKey);
     }, 210000);
 });
-{% endhighlight %}
