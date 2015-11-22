@@ -5,7 +5,7 @@ public: true
 category: web
 tags: [javascript, css, svg, html]
 title: Quick Change Trick with SVG and JavaScript
-results: /avatar-svg-fun/
+demo: index.html
 ---
 
 I was watching the episode of [Penn and Teller Fool Us with Quick Change Magicians](https://www.youtube.com/watch?v=PuydCas1c5c) and wanted to try it out with an SVG file.

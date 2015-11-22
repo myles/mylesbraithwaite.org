@@ -1,0 +1,7 @@
+.avatar {
+  margin: 0 auto;
+}
+
+.avatar .formal,
+.avatar .hipster,
+.avatar .suite-and-tie { display: none; }
