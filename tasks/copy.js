@@ -1,4 +1,6 @@
 module.exports = function (grunt) {
+    'use strict';
+
     var config = {
         build: {
             files: [{
@@ -17,6 +19,6 @@ module.exports = function (grunt) {
             }]
         }
     };
-    
+
     grunt.config.set('copy', config);
 };

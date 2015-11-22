@@ -1,4 +1,6 @@
 module.exports = function (grunt) {
+    'use strict';
+
     var config = {
         server: {
             options: {
@@ -7,6 +9,6 @@ module.exports = function (grunt) {
             }
         }
     };
-    
+
     grunt.config.set('connect', config);
 };

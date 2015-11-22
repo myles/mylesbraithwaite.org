@@ -1,4 +1,6 @@
 module.exports = function (grunt) {
+    'use strict';
+
     var config = {
         development: {
             files: [
@@ -27,6 +29,6 @@ module.exports = function (grunt) {
             }
         }
     };
-    
+
     grunt.config.set('watch', config);
 };

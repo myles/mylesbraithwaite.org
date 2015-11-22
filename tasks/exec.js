@@ -1,12 +1,14 @@
 module.exports = function (grunt) {
+    'use strict';
+
     var config = {
-		encrypt: {
-			cmd: "gpg --encrypt --armor -r <%= config.gpg_key => --batch --yes --trust-model always -o .aws.json.gpg .aws.json"
-		},
-		decrypt: {
-			cmd: "gpg --decrypt --armor -r <%= config.gpg_key => --batch --yes --trust-model always -o .aws.json .aws.json.gpg"
-		}
+        encrypt: {
+            cmd: "gpg --encrypt --armor -r <%= config.gpg_key => --batch --yes --trust-model always -o .aws.json.gpg .aws.json"
+        },
+        decrypt: {
+            cmd: "gpg --decrypt --armor -r <%= config.gpg_key => --batch --yes --trust-model always -o .aws.json .aws.json.gpg"
+        }
     };
-    
+
     grunt.config.set('exec', config);
 };

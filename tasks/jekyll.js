@@ -1,20 +1,22 @@
 module.exports = function (grunt) {
+    'use strict';
+
     var config = {
-		options: {
-			bundleExec: true,
-			config: '_config.yml'
-		},
-		build: {
-			options: {
-				build: true
-			}
-		},
-		serve: {
-			options: {
-				serve: true,
-				auto: true
-			}
-		},
+        options: {
+            bundleExec: true,
+            config: '_config.yml'
+        },
+        build: {
+            options: {
+                build: true
+            }
+        },
+        serve: {
+            options: {
+                serve: true,
+                auto: true
+            }
+        },
         development: {
             options: {
                 build: true,
@@ -41,6 +43,6 @@ module.exports = function (grunt) {
             }
         }
     };
-    
+
     grunt.config.set('jekyll', config);
 };

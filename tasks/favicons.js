@@ -1,4 +1,6 @@
 module.exports = function (grunt) {
+    'use strict';
+
     var config = {
         options: {
             coast: true,
@@ -18,6 +20,6 @@ module.exports = function (grunt) {
             dest: 'build/assets/icons/'
         }
     };
-    
+
     grunt.config.set('favicons', config);
 };
