@@ -28,6 +28,12 @@ module.exports = function (grunt) {
                 dest: '~/Sites/sites/mylesbraithwaite-org/html/'
             }
         },
+        heroku: {
+            options: {
+                build: true,
+                config: '_config.yml,_config.heroku.yml'
+            }
+        },
         prod: {
             options: {
                 build: true,

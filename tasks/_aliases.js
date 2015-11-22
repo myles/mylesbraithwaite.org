@@ -17,6 +17,11 @@ module.exports = function (grunt) {
         'watch:staging'
     ]);
     
+    grunt.registerTask('heroku', [
+        'jekyll:heroku',
+        'copy:build'
+    ]);
+    
 	grunt.registerTask('deploy', [
         'clean',
         'jekyll:prod',
