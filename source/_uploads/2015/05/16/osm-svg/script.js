@@ -5,5 +5,5 @@ $(document).ready(function () {
 
     var inject_me = $('img.inject_me');
 
-    SVGInjector(inject_me);
+    new SVGInjector(inject_me);
 });
