@@ -5,5 +5,5 @@ public: true
 category: web
 tags: [css, html]
 title: Hex Colour Clock
-results: /hexcolorclock/
+demo: index.html
 ---

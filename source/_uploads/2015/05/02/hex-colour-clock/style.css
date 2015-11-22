@@ -1,0 +1,33 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+div div {
+  top: 50%;
+	text-align: center;
+	position: relative;
+  font-family: 'Source Code Pro', monospace;
+  
+	-webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.day, .time {
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.day {
+	float: left;
+}
+
+.time {
+	float: right;
+}
