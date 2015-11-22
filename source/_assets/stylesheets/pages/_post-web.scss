@@ -1,6 +1,7 @@
 article.type-web {
-	$iframe-width: 100%;
-	$iframe-height: 75%;
+  .content {
+    margin-bottom: 1em;
+  }
 	
   .results {
 		.demo-link {

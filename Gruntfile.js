@@ -9,6 +9,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-rsync');
 	grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-favicons');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-connect');

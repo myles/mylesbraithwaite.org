@@ -7,12 +7,22 @@ type: web
     {{ content }}
 </section>
 
+{% if page.demo %}
 <section class="results">
-    <!-- <h2>Results</h2> -->
+    <a class="demo-link" href="{% upload_path {{ page.demo }} %}" title="{{ page.title }} Demo">Demo <em>(Open in New Window)</em>.</a>
     
+    <div class="wrapper">
+        <iframe id="results_iframe" src="{% upload_path {{ page.demo }} %}" frameborder="0" allowfullscreen scrolling="no"></iframe>
+    </div>
+</section>
+{% endif %}
+
+{% if page.results %}
+<section class="results">
     <a class="demo-link" href="{{ page.results | prepend: site.weblab_url }}" title="{{ page.title }} Demo">Demo <em>(Open in New Window)</em>.</a>
     
     <div class="wrapper">
         <iframe id="results_iframe" src="{{ page.results | prepend: site.weblab_url }}" frameborder="0" allowfullscreen scrolling="no"></iframe>
     </div>
 </section>
+{% endif %}

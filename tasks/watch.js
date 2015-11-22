@@ -5,7 +5,10 @@ module.exports = function (grunt) {
                 'source/*',
                 'source/**/*'
             ],
-            tasks: ['jekyll:build'],
+            tasks: [
+                'jekyll:build',
+                'copy:build'
+            ],
             options: {
                 livereload: true
             }
@@ -15,7 +18,10 @@ module.exports = function (grunt) {
                 'source/*',
                 'source/**/*'
             ],
-            tasks: ['jekyll:staging'],
+            tasks: [
+                'jekyll:staging',
+                'copy:staging'
+            ],
             options: {
                 livereload: true
             }
