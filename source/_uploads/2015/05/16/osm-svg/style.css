@@ -1,15 +1,3 @@
----
-layout: post_web
-date: 2015-05-16 17:30
-public: true
-category: web
-tags: [javascript, css, json, html]
-title: Styling a SVG OpenStreetMap Export with CSS
-lead: Using SVG-Inject to make a custom map style.
-demo: index.html
----
-
-```css
 .map {
   margin: auto;
   position: absolute;
@@ -56,4 +44,3 @@ demo: index.html
   stroke-opacity: 1;
   stroke-miterlimit: 4;
 }
-```
