@@ -1,0 +1,37 @@
+@keyframes multicolour {
+  0% {
+    fill: #f00;
+	stroke: #00ffff;
+  }
+  
+  25% {
+    fill: #f50;
+	stroke: #00aaff;
+  }
+  
+  50% {
+    fill: #ff0;
+	stroke: #0000ff;
+  }
+  
+  75% {
+    fill: #5f0;
+	stroke: #aa00ff;
+  }
+  
+  100% {
+    fill: #f00;
+	stroke: #00ffff;
+  }
+}
+
+body {
+	text-align: center;
+}
+
+svg * {
+	animation-name: multicolour;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
