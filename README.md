@@ -1,5 +1,7 @@
 # Myles' Lab
 
+[![Dependency Status](https://gemnasium.com/myles/mylesbraithwaite.org.svg)](https://gemnasium.com/myles/mylesbraithwaite.org)
+
 This is the source for my web site, [Myles' Lab](http://mylesbraithwaite.org).
 
 ## Develop
