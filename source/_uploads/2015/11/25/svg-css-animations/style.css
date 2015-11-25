@@ -1,3 +1,7 @@
+body {
+	text-align: center;
+}
+
 @keyframes multicolour {
   0% {
     fill: #f00;
@@ -23,10 +27,6 @@
     fill: #f00;
 	stroke: #00ffff;
   }
-}
-
-body {
-	text-align: center;
 }
 
 svg * {
