@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+{% assign category_data = site.data.categories | where:"slug", page.category %}
+{% assign category = category_data | first %}
+
+<div class="breadcrumb">
+    <a href="/">Home</a>
+    
+    {% if page.category %}
+        {% if category.short %}
+            <a href="/{{ category.slug }}/">{{ category.short | improve }}</a>
+        {% else %}
+            <a href="/{{ category.slug }}/">{{ category.title | improve }}</a>
+        {% endif %}
+    {% endif %}
+    {% if page.simpletitle %}
+        <a href="{{ page.url }}">{{ page.simpletitle | improve }}</a>
+    {% else %}
+        <a href="{{ page.url }}">{{ page.title | improve }}</a>
+    {% endif %}
+</div>
+
+<article class="type-{{ category.slug }}">
+    <!-- <p class="type">{{ category.title }}</p> -->
+    
+    <header>
+        <h1>{{ page.title | improve }}</h1>
+        
+        {% if page.lead %}<h2>{{ page.lead | improve }}</h2>{% endif %}
+        
+        <p class="meta">
+            Published: {{ page.date | date_to_long_string }}
+            {% if page.tags %}
+            | Tags:
+            {% endif %}
+            {% for tag_slug in page.tags %}
+                {% assign tag_data = site.data.tags | where:"slug", tag_slug %}
+                {% assign tag = tag_data | first %}
+                
+                {% if forloop.last %} and{% endif %}
+                
+                {% if tag %}<a href="/tag/{{ tag.slug }}/" rel="tag">{% if tag.full %}<acronym title="{{ tag.full }}">{{ tag.title | improve }}</acronym>{% else %}{{ tag.title | improve }}{% endif %}</a>{% else %}<a href="/tag/{{ tag_slug }}/" rel="tag">{{ tag_slug | improve }}</a>{% endif %}{% if forloop.last == false %},{% endif %}
+            {% endfor %}
+        </p>
+    </header>
+    
+    {{ content }}
+    
+    <section class="comments">
+        {% include disqus.html %}
+    </section>
+</article>

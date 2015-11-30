@@ -5,11 +5,11 @@ module.exports = function (grunt) {
         development: {
             files: [
                 'source/*',
-                'source/**/*'
+                'source/**/*',
+                '!source/_uploads'
             ],
             tasks: [
-                'jekyll:build',
-                'copy:build'
+                'jekyll:build'
             ],
             options: {
                 livereload: true

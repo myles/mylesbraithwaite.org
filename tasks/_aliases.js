@@ -30,7 +30,8 @@ module.exports = function (grunt) {
         'copy:build',
         'favicons',
         's3:website',
-        'rsync:prod'
+        'rsync:prod',
+        'clean'
     ]);
 
     grunt.registerTask('default', ['run']);
