@@ -48,7 +48,9 @@ layout: default
     
     {{ content }}
     
+    {% if page.comments %}
     <section class="comments">
         {% include disqus.html %}
     </section>
+    {% endif %}
 </article>
