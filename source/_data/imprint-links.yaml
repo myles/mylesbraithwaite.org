@@ -6,10 +6,10 @@
       url: /about/
     - slug: contact
       title: Contact
-      url: /contact/
-    - slug: subscribe
-      title: Subscribe
-      url: /subscribe/
+      url: /about/#contact
+    - slug: colophon
+      title: Colophon
+      url: /about/#colophon
 
 - slug: follow-me
   title: Follow Me
