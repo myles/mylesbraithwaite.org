@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 404 Error - Page Not Found
+robots: noindex, follow
+sitemap: false
 ---
 
 You’re in a room. It’s dark. Silent. As your eyes become accustomed to the gloom you notice something on the wall opposite. Squinting, you read:
