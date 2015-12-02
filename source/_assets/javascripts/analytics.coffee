@@ -1,4 +1,6 @@
-class GoogleAnalytics
+# coffeelint: disable=max_line_length
+
+class window.GoogleAnalytics
   @init: (webPropertyId) ->
     @_initQueue webPropertyId
     scriptTag = @_createScriptTag()
@@ -30,29 +32,3 @@ class GoogleAnalytics
     for argument in [label, value, nonInteraction]
       if argument? then trackedEvent.push argument else break
     window._gaq.push trackedEvent
-
-
-
-$ ->
-  GoogleAnalytics.init 'UA-1642439-40'
-  
-  if MylesLabPageDetails.date
-    
-    date_year = MylesLabPageDetails.date.substring(0, 4)
-    date_month = MylesLabPageDetails.date.substring(0, 7)
-    date_day = MylesLabPageDetails.date.substring(0, 10)
-    
-    GoogleAnalytics.trackEvent 'year', date_year, 'Year'
-  
-  if MylesLabPageDetails.tags
-    for tag in MylesLabPageDetails.tags
-      GoogleAnalytics.trackEvent 'tag', tag, 'Tag'
-  
-  if MylesLabPageDetails.category
-    for category in MylesLabPageDetails.category
-      title = ''
-      if category.short
-        title = category.short
-      else
-        title = category.title
-      GoogleAnalytics.trackEvent category.slug, category.slug, title

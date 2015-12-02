@@ -1,12 +1,39 @@
+# coffeelint: disable=max_line_length
+
 #= require jquery
 #= require iconic
 
 #= require analytics
 
 $(document).ready ->
+  GoogleAnalytics.init 'UA-1642439-40'
+  
+  if MylesLabPageDetails.date
+    date_year = MylesLabPageDetails.date.substring(0, 4)
+    date_month = MylesLabPageDetails.date.substring(0, 7)
+    date_day = MylesLabPageDetails.date.substring(0, 10)
+    
+    GoogleAnalytics.trackEvent 'year', date_year, 'Year'
+  
+  if MylesLabPageDetails.tags
+    for tag in MylesLabPageDetails.tags
+      GoogleAnalytics.trackEvent 'tag', tag, 'Tag'
+  
+  if MylesLabPageDetails.category
+    for category in MylesLabPageDetails.category
+      title = ''
+      if category.short
+        title = category.short
+      else
+        title = category.title
+      GoogleAnalytics.trackEvent category.slug, category.slug, title
+  
   menuToggle = $('#js-mobile-menu').unbind()
+  
   $('#js-navigation-menu').removeClass 'show'
+  
   $("#js-elsewhere-menu").removeClass 'show'
+  
   menuToggle.on 'click', (e) ->
     e.preventDefault()
     $('#js-navigation-menu').slideToggle ->
