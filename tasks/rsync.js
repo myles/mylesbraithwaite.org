@@ -3,16 +3,16 @@ module.exports = function (grunt) {
 
     var config = {
         options: {
-            args: ["--verbose"],
-            recursive: true
+            args: ["--verbose"]
         },
         prod: {
             options: {
                 src: "./build/",
                 dest: "/srv/www/org_mylesbraithwaite_www/html",
-                host: "myles@panda.mylesbraithwaite.com",
-                port: "2222",
+                host: "panda",
                 delete: true,
+                recursive: true,
+                ssh: true
             }
         }
     };
