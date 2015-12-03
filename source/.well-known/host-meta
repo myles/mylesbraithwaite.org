@@ -1,0 +1,9 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<XRD>
+    <Subject>http://mylesbraithwaite.org</Subject>
+    <Link rel="alternate" href="http://mylesbraithwaite.org/feed.xml" type="application/rss+xml"/>
+    <Link rel="lrdd" template="http://mylesbraithwaite.org/.well-known/webfinger?resource={uri}&from=xrd" type="application/json"/>
+</XRD>
