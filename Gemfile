@@ -5,6 +5,7 @@ gem 'jekyll-assets'
 gem 'jekyll-sitemap'
 gem 'jekyll-archives'
 gem 'jekyll-typogrify'
+gem 'jekyll-minify-html'
 
 gem 'bourbon'
 gem 'neat'

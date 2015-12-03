@@ -1,0 +1,11 @@
+{% if page.categories %}
+        <script type="application/ld+json">
+            {
+                "@context":"http://schema.org",
+                "@type": "BlogPosting",
+                "@id": {{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | jsonify }},
+                "headline": {{ page.title | jsonify }},
+                "datePublished": {{ page.date | jsonify }}
+            }
+        </script>
+{% endif %}
