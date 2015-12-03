@@ -8,6 +8,8 @@ gems:
 source: source
 destination: build
 
+include: ['.well-known']
+
 assets:
   dirname: assets
   baseurl: /assets/
