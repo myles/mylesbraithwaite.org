@@ -1,0 +1,19 @@
+---
+layout: none
+---
+{
+    "subject": "acct:me@mylesbraithwaite.org",
+    "properties": {
+        "http://schema.org/name": "Myles Braithwaite"
+    },
+    "links": [
+        {
+            "rel": "http://webfinger.net/rel/profile-page",
+            "href": "http://mylesbraithwaite.org/"
+        },
+		{
+			"rel": "http://webfinger.net/rel/avatar",
+			"href": "http://www.gravatar.com/avatar/f95fe316ef71f251592e1987b1ff08a7.jpg?s=512"
+		}
+    ]
+}

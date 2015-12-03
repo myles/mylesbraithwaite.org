@@ -5,11 +5,16 @@ module.exports = function (grunt) {
         options: {
             accessKeyId: "<%= aws.accessKeyId %>",
             secretAccessKey: "<%= aws.secretAccessKey %>",
-            bucket: "mylesbraithwaite.org"
+            bucket: "mylesbraithwaite.org",
+            enableWeb: true
         },
         website: {
             cwd: "build",
             src: "**"
+        },
+        well_known: {
+            cwd: "build",
+            src: ".well-known/*"
         }
     };
 
