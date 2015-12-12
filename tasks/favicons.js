@@ -9,7 +9,7 @@ module.exports = function (grunt) {
             tileBlackWhite: true,
             tileColor: '#477dca',
             androidHomescreen: true,
-            appleTouchBackgroundColor: '#477dca',
+            appleTouchBackgroundColor: 'transparent',
             precomposed: false,
             // indent: '        ',
             // html: 'source/_includes/head_favicons.html',
