@@ -13,8 +13,11 @@ module.exports = function (grunt) {
             src: "**"
         },
         well_known: {
+            options: {
+                gzip: false
+            },
             cwd: "build",
-            src: ".well-known/*"
+            src: ".well-known/**/*"
         }
     };
 
