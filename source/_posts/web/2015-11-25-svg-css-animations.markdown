@@ -9,6 +9,7 @@ tags:
   - svg
 title: CSS Animations on a SVG File
 demo: index.html
+shorturl: http://myl.be/B
 ---
 
 I wanted to have a colour change logo for [Myles.City](http://myles.city/). It turned out really simple to do with CSS animations and a SVG file.
