@@ -6,6 +6,7 @@ category: python
 tags: [python, fuzzywuzzy]
 title: Fuzzy Wuzzy is a String Matching Python Library
 tease: Some of my notes about the Python library FuzzyWuzzy.
+shorturl: http://myl.be/I
 ---
 
 [FuzzyWuzzy](https://github.com/seatgeek/fuzzywuzzy) uses the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) to help calculate differences between sequences in a simple to use package.
