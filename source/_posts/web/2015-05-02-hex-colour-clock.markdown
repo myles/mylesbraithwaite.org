@@ -6,4 +6,5 @@ category: web
 tags: [css, html]
 title: Hex Colour Clock
 demo: index.html
+shorturl: http://myl.be/G
 ---
