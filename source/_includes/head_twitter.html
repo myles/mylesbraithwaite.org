@@ -9,7 +9,7 @@
         {% endif %}
         
         {% if page.url %}
-        <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}?utm_source=twitter&utm_medium=social&utm_campaign=head">
         {% endif %}
         
         {% if page.tease %}
