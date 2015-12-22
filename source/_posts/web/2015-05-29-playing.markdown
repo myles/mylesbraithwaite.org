@@ -7,6 +7,7 @@ tags: [javascript, css, json, html]
 title: Currently Playing on Last.fm JavaScript Widget
 lead: Playing around with jQuery and Last.fm's JavaScript API.
 demo: index.html
+shorturl: http://myl.be/E
 ---
 
 This is a simple JavaScript script that access Last.fm's JSON API and get's the current track, artist, and album image.
