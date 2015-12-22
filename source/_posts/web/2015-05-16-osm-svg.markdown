@@ -7,6 +7,7 @@ tags: [javascript, css, json, html]
 title: Styling a SVG OpenStreetMap Export with CSS
 lead: Using SVG-Inject to make a custom map style.
 demo: index.html
+shorturl: http://myl.be/F
 ---
 
 ```css
