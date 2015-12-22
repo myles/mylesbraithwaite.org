@@ -20,6 +20,10 @@
         {% endif %}
         
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+        {% if page.shorturl %}
+        <link rel="shortlink" href="{{ page.shorturl }}">
+        {% endif %}
         
         <!--
             TODO Add .onion address here.
