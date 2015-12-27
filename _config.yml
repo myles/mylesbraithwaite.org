@@ -8,8 +8,6 @@ gems:
 source: source
 destination: build
 
-include: ['.well-known']
-
 assets:
   dirname: assets
   baseurl: /assets/
@@ -32,7 +30,7 @@ jekyll-archives:
     category: '/:name/'
 
 # Site settings
-title: Myles' Lab
+title: "Myles' Lab"
 description: Myles Braithwaite's Programming Laboratory.
 permalink: /:year/:month/:day/:title/
 
