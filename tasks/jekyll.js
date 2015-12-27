@@ -33,13 +33,13 @@ module.exports = function (grunt) {
         heroku: {
             options: {
                 build: true,
-                config: 'config/base.yml,config/.heroku.yml'
+                config: 'config/base.yml,config/heroku.yml'
             }
         },
         prod: {
             options: {
                 build: true,
-                config: 'config/base.yml,config/.production.yml'
+                config: 'config/base.yml,config/production.yml'
             }
         }
     };
