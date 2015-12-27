@@ -1,5 +1,7 @@
 ---
-layout: none
+layout: null
+sitemap: false
+permalink: .well-known/webfinger
 ---
 {
     "subject": "acct:me@mylesbraithwaite.org",
