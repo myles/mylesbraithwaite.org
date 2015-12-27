@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     var config = {
         options: {
             bundleExec: true,
-            config: '_config.yml'
+            config: 'config/base.yml'
         },
         build: {
             options: {
@@ -20,26 +20,26 @@ module.exports = function (grunt) {
         development: {
             options: {
                 build: true,
-                config: '_config.yml'
+                config: 'config/base.yml,config/development.yml'
             }
         },
         staging: {
             options: {
                 build: true,
-                config: '_config.yml,_config.staging.yml',
+                config: 'config/base.yml,config/staging.yml',
                 dest: '~/Sites/sites/mylesbraithwaite-org/html/'
             }
         },
         heroku: {
             options: {
                 build: true,
-                config: '_config.yml,_config.heroku.yml'
+                config: 'config/base.yml,config/.heroku.yml'
             }
         },
         prod: {
             options: {
                 build: true,
-                config: '_config.yml,_config.production.yml'
+                config: 'config/base.yml,config/.production.yml'
             }
         }
     };

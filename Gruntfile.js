@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         aws: grunt.file.readJSON('.aws.json'),
-        config: grunt.file.readYAML('_config.yml')
+        config: grunt.file.readYAML('config/base.yml')
     });
 
     // Load all the grunt packages.
