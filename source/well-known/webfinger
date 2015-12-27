@@ -5,6 +5,13 @@ permalink: .well-known/webfinger
 ---
 {
     "subject": "acct:me@mylesbraithwaite.org",
+    "aliases": [
+        "http://mylesbraithwaite.com/",
+        "http://myles.github.io/",
+        "http://myles.coffee/",
+        "http://mylesb.ca/",
+        "http://myles.red/"
+    ],
     "properties": {
         "http://schema.org/name": "Myles Braithwaite"
     },
