@@ -25,11 +25,6 @@
         <link rel="shortlink" href="{{ page.shorturl }}">
         {% endif %}
         
-        <!--
-            TODO Add .onion address here.
-            <link rel="onion" href="http://TODO.onion/">
-        -->
-        
         <link rel="logomark" type="image/svg+xml" href="{% asset_path logomark.svg %}">
         <link rel="logo" type="image/svg+xml" href="{% asset_path logotype.svg %}">
         
@@ -60,9 +55,13 @@
         
         <script type="text/javascript">
             window.MylesLabPageDetails = {
+                {% if page.id %}id: {{ page.id | jsonify }},{% endif %}
+                {% if page.url %}url: {{ page.url | jsonify }},{% endif %}
                 {% if page.title %}title: {{ page.title | jsonify }},{% endif %}
                 {% if page.date %}date: {{ page.date | jsonify }},{% endif %}
                 {% if page.tags %}tags: {{ page.tags | jsonify }},{% endif %}
+                {% if page.path %}path: {{ page.path | jsonify }},{% endif %}
+                {% if page.layout %}layout: {{ page.layout | jsonify }},{% endif %}
                 {% if page.category %}
                 {% assign category_data = site.data.categories | where:"slug", page.category %}
                 category: {{ category_data | jsonify }},
