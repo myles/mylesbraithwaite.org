@@ -10,7 +10,7 @@ Myles' Lab is a place on the Internet where I can publish quick notes and experi
 
 You can follow Myles' Lab on [Twitter](https://www.twitter.com/MylesLab "Subscribe to Myles Braithwaite's Laboratory though Twitter."), [Feedly](http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fmylesbraithwaite.org%2Ffeed.xml "Subscribe to Myles Braithwaite's Laboratory though Feedly"), or [RSS](http://mylesbraithwaite.org/feed.xml "Subscribe to Myles Braithwaite's Laboratory using your Feed Reader.").
 
-You can download the [logomark]({% asset_path 'logomark.svg' %}) and [logotype]({% asset_path 'logotype.svg' %}") here.
+You can download the [logomark]({% asset_path 'logomark.svg' %}) and [logotype]({% asset_path 'logotype.svg' %}) here.
 
 ## About Myles <a name="about-myles"></a>
 

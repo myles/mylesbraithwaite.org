@@ -94,13 +94,17 @@ article {
 		}
 	}
 	
-	.highlight pre {
-		@include padding(.5em 1em);
+	.highlight {
+	  margin: 0 0 $small-spacing;
+    
+    pre {
+  		@include padding(.5em 1em);
 		
-		border: 1px solid $dark-gray;
-		background-color: lighten($dark-gray, 80%);
+  		border: 1px solid $dark-gray;
+  		background-color: lighten($dark-gray, 80%);
+  	}
 	}
-	
+  
 	hr {
 		width: 3em;
 	}

@@ -1,0 +1,41 @@
+body {
+	text-align: center;
+}
+
+svg .iconic-compass-needle {
+	fill: #cb4154;
+}
+
+svg .iconic-compass-body {
+	stroke: #4a646c;
+	fill: #fefefa;
+}
+
+svg .iconic-compass-direction {
+	fill: #4a646c;
+}
+
+@keyframes spin {
+	0% {
+		transform-origin: center;
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	
+	50% {
+		transform-origin: center;
+		transform: rotate3d(0, 0, 1, 180deg);
+	}
+	
+	100% {
+		transform-origin: center;
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
+
+svg:hover .iconic-compass-needle-axis,
+svg:hover .iconic-compass-needle {
+	animation-name: spin;
+	animation-duration: 3s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
