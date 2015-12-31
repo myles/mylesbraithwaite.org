@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+}
+
+@keyframes spin {
+	0% {
+		transform-origin: center;
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	
+	50% {
+		transform-origin: center;
+		transform: rotate3d(0, 0, 1, 180deg);
+	}
+	
+	100% {
+		transform-origin: center;
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
+
+svg .iconic-compass-needle-axis,
+svg .iconic-compass-needle {
+	animation-name: spin;
+	animation-duration: 3s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}

@@ -1,0 +1,48 @@
+---
+layout: post_web
+date: 2015-12-30 20:10
+public: true
+category: web
+tags:
+  - javascript
+  - css
+  - svg
+title: Spin a Compass Needle
+demo: index.html
+shorturl: http://myl.be/R
+---
+
+For [one of my web sites](http://myles.life/) I wanted to have an animated compans.
+
+### SVG File
+
+```xml
+<svg>
+	<g>
+		<circle class="compass-body"></circle>
+		<path class="compass-needle"></path>
+		<circle class="compass-needle-axis"></circle>
+	</g>
+</svg>
+```
+
+### CSS Animation
+
+```javascript
+@keyframes spin {
+	0% {
+		transform-origin: center;
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	
+	50% {
+		transform-origin: center;
+		transform: rotate3d(0, 0, 1, 180deg);
+	}
+	
+	100% {
+		transform-origin: center;
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
+```
