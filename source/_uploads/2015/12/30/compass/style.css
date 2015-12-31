@@ -2,6 +2,19 @@ body {
 	text-align: center;
 }
 
+svg .iconic-compass-needle {
+	fill: #cb4154;
+}
+
+svg .iconic-compass-body {
+	stroke: #4a646c;
+	fill: #fefefa;
+}
+
+svg .iconic-compass-direction {
+	fill: #4a646c;
+}
+
 @keyframes spin {
 	0% {
 		transform-origin: center;
@@ -19,8 +32,8 @@ body {
 	}
 }
 
-svg .iconic-compass-needle-axis,
-svg .iconic-compass-needle {
+svg:hover .iconic-compass-needle-axis,
+svg:hover .iconic-compass-needle {
 	animation-name: spin;
 	animation-duration: 3s;
 	animation-fill-mode: both;
