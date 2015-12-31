@@ -1,0 +1,14 @@
+---
+layout: page
+title: Updated
+---
+
+<div class="post-list">
+    <ul>
+    {% for post in site.posts | sort: 'updated' %}
+    {% if post.updated %}
+     <li class="post post-type-{{ post.categories | first }}"><a href="{{ post.url }}">{{ post.title | improve }}</a> was updated on <strong>{{ post.updated | date: "%-d %b, %Y" }}</strong>.</li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+</div>

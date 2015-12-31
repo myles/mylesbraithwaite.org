@@ -5,7 +5,7 @@ public: true
 category: python
 tags: [python, fuzzywuzzy]
 title: Fuzzy Wuzzy is a String Matching Python Library
-tease: Some of my notes about the Python library FuzzyWuzzy.
+lead: Some of my notes about the Python library FuzzyWuzzy.
 shorturl: http://myl.be/I
 ---
 

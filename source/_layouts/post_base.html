@@ -32,6 +32,9 @@ layout: default
         
         <p class="meta">
             Published: {{ page.date | date_to_long_string }}
+            {% if page.updated %}
+            | Updated: {{ page.updated | date_to_long_string }}
+            {% endif %}
             {% if page.tags %}
             | Tags:
             {% endif %}
