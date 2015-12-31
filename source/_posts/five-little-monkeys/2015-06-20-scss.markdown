@@ -1,0 +1,62 @@
+---
+layout: post_web
+date: 2015-06-20 20:12
+updated: 2015-12-30 17:12
+public: true
+category: five-little-monkeys
+tags: [sass, five-little-monkeys]
+title: Five Little Monkeys in Sass
+simpletitle: Sass
+demo: index.html
+---
+
+```scss
+$numbers: (5: One, 4: Two, 3: Three, 2: Four, 1: Five);
+
+.stanza {
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+.line {
+  margin: 0;
+}
+
+@each $key, $value in $numbers {
+  .stanza-#{$key} {
+    @if $key == 5 {
+      .line-1::before {
+        content: '#{$value} little monkey jumping on the bed';
+      }
+
+      .line-2::before {
+        content: 'They fell off and bumped their head';
+      }
+
+      .line-5::before {
+        content: 'Put those monkeys right to bed';
+      }
+    } @else {
+      .line-1::before {
+        content: '#{$value} little monkeys jumping on the bed';
+      }
+
+      .line-2::before {
+        content: 'One fell off and bumped their head';
+      }
+
+      .line-5::before {
+        content: 'No more monkeys jumping on the bed';
+      }
+    }
+  }
+}
+
+.line-3::before {
+  content: 'Mama called the doctor';
+}
+
+.line-4::before {
+  content: 'And the doctor said';
+}
+```

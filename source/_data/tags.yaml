@@ -17,3 +17,9 @@
   title: Five Little Monkeys
 - slug: swift
   title: Swift
+- slug: coffeescript
+  title: CoffeeScript
+- slug: go
+  title: Go
+- slug: perl
+  title: Perl

@@ -1,0 +1,57 @@
+.stanza {
+  margin-bottom: .5em;
+  margin-top: .5em; }
+
+.line {
+  margin: 0; }
+
+.stanza-5 .line-1::before {
+  content: "One little monkey jumping on the bed"; }
+
+.stanza-5 .line-2::before {
+  content: 'They fell off and bumped their head'; }
+
+.stanza-5 .line-5::before {
+  content: 'Put those monkeys right to bed'; }
+
+.stanza-4 .line-1::before {
+  content: "Two little monkeys jumping on the bed"; }
+
+.stanza-4 .line-2::before {
+  content: 'One fell off and bumped their head'; }
+
+.stanza-4 .line-5::before {
+  content: 'No more monkeys jumping on the bed'; }
+
+.stanza-3 .line-1::before {
+  content: "Three little monkeys jumping on the bed"; }
+
+.stanza-3 .line-2::before {
+  content: 'One fell off and bumped their head'; }
+
+.stanza-3 .line-5::before {
+  content: 'No more monkeys jumping on the bed'; }
+
+.stanza-2 .line-1::before {
+  content: "Four little monkeys jumping on the bed"; }
+
+.stanza-2 .line-2::before {
+  content: 'One fell off and bumped their head'; }
+
+.stanza-2 .line-5::before {
+  content: 'No more monkeys jumping on the bed'; }
+
+.stanza-1 .line-1::before {
+  content: "Five little monkeys jumping on the bed"; }
+
+.stanza-1 .line-2::before {
+  content: 'One fell off and bumped their head'; }
+
+.stanza-1 .line-5::before {
+  content: 'No more monkeys jumping on the bed'; }
+
+.line-3::before {
+  content: 'Mama called the doctor'; }
+
+.line-4::before {
+  content: 'And the doctor said'; }
