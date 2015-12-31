@@ -13,7 +13,8 @@ permalink: .well-known/webfinger
         "http://myles.red/"
     ],
     "properties": {
-        "http://schema.org/name": "Myles Braithwaite"
+        "http://schema.org/name": "Myles Braithwaite",
+        "http://schema.org/email": "me@mylesbraithwaite.org"
     },
     "links": [
         {
