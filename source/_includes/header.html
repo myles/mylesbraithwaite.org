@@ -13,7 +13,8 @@
                         {{ site.title | improve }}
                     </a>
                 </li>
-                {% for category in site.data.categories %}
+                {% assign categories = site.data.categories | sort: 'weight', 'last' %}
+                {% for category in categories %}
                 <li class="nav-link {{ category.slug }}">
                     <a href="/{{ category.slug }}/" {% if category.short %}title="{{ category.title }}"{% endif %}>
                         {% if category.short %}
