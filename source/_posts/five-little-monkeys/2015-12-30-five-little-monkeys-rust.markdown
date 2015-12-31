@@ -1,0 +1,35 @@
+---
+layout: post
+date: 2015-12-30 11:50
+public: true
+category: five-little-monkeys
+tags: [rust, five-little-monkeys]
+title: Five Little Monkeys in Rust
+---
+
+[Rust](https://en.m.wikipedia.org/wiki/Rust_(programming_language)) is a multi-paradigm, compiled programming language developed by Mozilla. The goal of Rust is to be a good language for creating highly concurrent and highly safe systems. The syntax is similar to C and C++ which means it looks horrible. 
+
+```rust
+fn main() {
+	let number_of_monkeys = vec![ "One", "Two", "Three", "Four", "Five" ];
+	
+	for monkey in number_of_monkeys.iter().rev() {
+		if monkey.to_string() == "One" {
+			println!("{} little monkey jumping on the bed", monkey);
+			println!("They fell off and bumped their head");
+		} else {
+			println!("{} little monkeys jumping on the bed", monkey);
+			println!("One fell off and bumped their head");
+		}
+		
+		println!("Mama called the doctor,");
+		println!("And the doctor said");
+		
+		if monkey.to_string() == "One" {
+			println!("Put those monkeys right to bed\n");
+		} else {
+			println!("No more monkeys jumping on the bed\n");
+		}
+	}
+}
+```
