@@ -1,6 +1,6 @@
 # Myles' Lab
 
-[![Dependency Status](https://gemnasium.com/myles/mylesbraithwaite.org.svg)](https://gemnasium.com/myles/mylesbraithwaite.org)
+[![Dependency Status](https://gemnasium.com/myles/mylesbraithwaite.org.svg)](https://gemnasium.com/myles/mylesbraithwaite.org) [![Trello Board](https://img.shields.io/badge/trello-board-0079bf.svg)](https://trello.com/b/8EcgMnFo)
 
 This is the source for my web site, [Myles' Lab](http://mylesbraithwaite.org).
 
