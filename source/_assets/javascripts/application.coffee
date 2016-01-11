@@ -2,8 +2,17 @@
 
 #= require jquery
 #= require iconic
+#= require moment
+#= require handlebars
 
 #= require analytics
+
+Handlebars.registerHelper 'dateFormat', (context, block) ->
+  if window.moment
+    f = block.hash.format or 'Do MMMM, YYYY h:mm a'
+    moment(context).format f
+  else
+    context
 
 $(document).ready ->
   GoogleAnalytics.init 'UA-1642439-40'
@@ -27,6 +36,15 @@ $(document).ready ->
       else
         title = category.title
       GoogleAnalytics.trackEvent category.slug, category.slug, title
+  
+  if $('#js-commits').length
+    github_url = 'https://api.github.com/repos/myles' +
+                 '/mylesbraithwaite.org/commits?path=' +
+                 encodeURIComponent MylesLabPageDetails.path
+    
+    $.getJSON github_url, (data) ->
+      template = Handlebars.compile $('#js-commits-template').html()
+      $('#js-commits').html template({data: data})
   
   menuToggle = $('#js-mobile-menu').unbind()
   

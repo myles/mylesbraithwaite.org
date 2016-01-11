@@ -60,7 +60,7 @@
                 {% if page.title %}title: {{ page.title | jsonify }},{% endif %}
                 {% if page.date %}date: {{ page.date | jsonify }},{% endif %}
                 {% if page.tags %}tags: {{ page.tags | jsonify }},{% endif %}
-                {% if page.path %}path: {{ page.path | jsonify }},{% endif %}
+                {% if page.path %}path: "source/{{ page.path }}",{% endif %}
                 {% if page.layout %}layout: {{ page.layout | jsonify }},{% endif %}
                 {% if page.category %}
                 {% assign category_data = site.data.categories | where:"slug", page.category %}

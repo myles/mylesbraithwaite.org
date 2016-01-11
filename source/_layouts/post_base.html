@@ -51,8 +51,31 @@ layout: default
     
     {{ content }}
     
+    <section id="js-commits" class="changes"></section>
+    
+    {% raw %}
+    <script id="js-commits-template" type="text/x-handlebars-template">
+        <hr>
+        
+        <h3>Changes</h3>
+        
+        <ul>
+            {{#each data}}
+            <li>
+                {{dateFormat commit.committer.date}}
+                <a href="{{html_url}}">{{commit.message}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    {% endraw %}
+    
     {% if page.comments %}
     <section class="comments">
+        <hr>
+        
+        <h3>Comments</h3>
+        
         {% include disqus.html %}
     </section>
     {% endif %}

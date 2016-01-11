@@ -32,13 +32,13 @@ article {
 	}
   
   hr {
-    border-bottom: 1px solid $light-gray;
+    border-top: 1px solid $light-gray;
     border-left: none;
     border-right: none;
-    border-top: none;
+    border-bottom: none;
     margin: $base-spacing 0;
   }
-	
+  
 	.type {
     border-bottom: 1px solid;
     display: inline-block;
@@ -94,6 +94,10 @@ article {
 		}
 	}
 	
+  .content hr {
+    width: 3em;
+  }
+  
 	.highlight {
 	  margin: 0 0 $small-spacing;
     
@@ -103,10 +107,6 @@ article {
   		border: 1px solid $dark-gray;
   		background-color: lighten($dark-gray, 80%);
   	}
-	}
-  
-	hr {
-		width: 3em;
 	}
 	
 	p.autor {
