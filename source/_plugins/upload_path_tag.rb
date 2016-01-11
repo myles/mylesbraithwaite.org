@@ -38,7 +38,7 @@ module Jekyll
 
     def render(context)
       if @markup.empty?
-        return "Error processing input, expected syntax: {% asset_path [filename] %}"
+        return "Error processing input, expected syntax: {% upload_path [filename] %}"
       end
 
       #render the markup
