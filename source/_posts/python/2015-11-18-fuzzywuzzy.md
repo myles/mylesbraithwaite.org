@@ -79,7 +79,7 @@ fuzz.partial_ratio('ABC Corp.', 'ABC Inc.')
 
 ---
 
-Generally the above wouldn't matter as you would remove the type of business entity during the duplicate check. It would be close to below.
+Generally the above wouldn't matter as you would remove the business entity during the duplicate check. It would be close to below.
 
 ---
 
@@ -149,4 +149,4 @@ process.extract('BC', provinces, limit=5)
 
 ---
 
-So it's pretty bad for doing postal abbreviations but that would probably be better as a sperate function.
+It's pretty bad for doing postal abbreviations but that would probably be better as a sperate function.
