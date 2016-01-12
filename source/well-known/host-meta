@@ -4,8 +4,7 @@ sitemap: false
 permalink: .well-known/host-meta
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<XRD>
-    <Subject>http://mylesbraithwaite.org</Subject>
-    <Link rel="alternate" href="http://mylesbraithwaite.org/feed.xml" type="application/rss+xml"/>
-    <Link rel="lrdd" template="http://mylesbraithwaite.org/.well-known/webfinger?resource={uri}&from=xrd" type="application/json"/>
+<XRD xmlns="http://docs.oasis-open.org/ns/xri/xrd-1.0">	    	<Subject>http://mylesbraithwaite.org</Subject>
+	<Link rel="alternate" href="http://mylesbraithwaite.org/feed.xml" type="application/rss+xml"/>
+	<Link rel="lrdd" template="http://mylesbraithwaite.org/.well-known/webfinger?resource={uri}" type="application/json"/>
 </XRD>

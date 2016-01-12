@@ -2,11 +2,11 @@
 # Author: Sam Rayner http://samrayner.com
 # Description: Output a relative URL for assets based on the post or page
 #
-# Syntax {% asset_path [filename] %}
+# Syntax {% upload_path [filename] %}
 #
 # Examples:
-# {% asset_path kitten.png %} on post 2013-01-01-post-title
-# {% asset_path pirate.mov %} on page page-title
+# {% upload_path kitten.png %} on post 2013-01-01-post-title
+# {% upload_path pirate.mov %} on page page-title
 #
 # Output:
 # /assets/posts/post-title/kitten.png
@@ -19,7 +19,7 @@
 #   image_one.png
 #   image_two.png
 #
-# {% for image in site.data.images %}{% asset_path {{ image.file }} %}{% endfor %} on post 2015-03-21-post-title
+# {% for image in site.data.images %}{% upload_path {{ image.file }} %}{% endfor %} on post 2015-03-21-post-title
 #
 # Output:
 # /assets/posts/post-title/image_one.png
