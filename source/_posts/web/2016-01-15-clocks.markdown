@@ -1,0 +1,14 @@
+---
+layout: post_web
+date: 2016-01-15 08:40
+public: true
+category: web
+tags:
+  - javascript
+  - time
+title: Different Clocks in JavaScript
+demo: index.html
+shorturl: http://myl.be/18
+---
+
+I wanted to pay around with the `new Date` function and the [Moment.js](http://momentjs.com/) library in JavaScript so I made a bunch of different clocks.
