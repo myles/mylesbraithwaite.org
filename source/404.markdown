@@ -13,4 +13,4 @@ It might be written in blood or something. I don’t know. This story’s gone o
 
 What I’m trying to say is the page you’re looking for, <code>{{ page.url }}</code>, can’t be found. Sorry.
 
-You're probably looking for the most recent blog post called {% assign post = site.posts | first %}<a href="{{ post.url }}">{{ post.title }}</a>; but if you're completely lost, try the <a href="/">home page</a>. If you think I’ve made some kind of mistake (as unlikely as that sounds) you should <a href="mailto:{{ site.email }}">get in touch</a>.
+You're probably looking for the most recent blog post called {% for post in site.posts limit:1 %}<a href="{{ post.url }}">{{ post.title }}</a>{% endfor %}; but if you're completely lost, try the <a href="/">home page</a>. If you think I’ve made some kind of mistake (as unlikely as that sounds) you should <a href="mailto:{{ site.email }}">get in touch</a>.
