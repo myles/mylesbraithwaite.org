@@ -21,7 +21,12 @@ assets:
 
 jekyll-archives:
   enabled: all
-  layout: 'archive'
+  layouts:
+    year: archive
+    month: archive
+    day: archive
+    tag: archive-taxonomy
+    category: archive-taxonomy
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'

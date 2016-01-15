@@ -11,22 +11,6 @@ robots: 'noindex, follow'
 
 <div class="breadcrumb">
     <a href="/">Home</a>
-    
-    {% if page.type =='year' %}
-        <a href="{{ page.url }}">{{ page.date | date: "%Y" }}</a>
-    {% endif %}
-    
-    {% if page.type == 'month' %}
-        <a href="{{ page.date | date: "/%Y/" }}">{{ page.date | date: "%Y" }}</a>
-        <a href="{{ page.url }}">{{ page.date | date: "%B" }}</a>
-    {% endif %}
-    
-    {% if page.type == 'day' %}
-        <a href="{{ page.date | date: "/%Y/" }}">{{ page.date | date: "%Y" }}</a>
-        <a href="{{ page.date | date: "/%Y/%m/" }}">{{ page.date | date: "%B" }}</a>
-        <a href="{{ page.url }}">{{ page.date | date: "%-d" }}</a>
-    {% endif %}
-    
     {% if page.type == 'tag' %}
         <a href="/tag/">Tags</a>
         {% if tag %}
@@ -47,18 +31,6 @@ robots: 'noindex, follow'
 
 <article class="type-page">
     <header>
-        {% if page.type =='year' %}
-            <h1>Archive for {{ page.date | date: "%Y" }}</h1>
-        {% endif %}
-    
-        {% if page.type == 'month' %}
-            <h1>Archive for {{ page.date | date: "%B %Y" }}</h1>
-        {% endif %}
-        
-        {% if page.type == 'day' %}
-            <h1>Archive for {{ page.date | date: "%-d %B, %Y" }}</h1>
-        {% endif %}
-        
         {% if page.type == 'tag' %}
             <h1><strong>{{ tag.title | improve }}</strong></h1>
             
@@ -77,6 +49,24 @@ robots: 'noindex, follow'
     </header>
     
     <section class="content">
-        {% include post_list.html posts=page.posts %}
+        <div class="cards">
+            {% for post in page.posts %}
+            <div class="card">
+                <a href="{{ post.url }}">
+                    <div class="card-image">
+                        <img src="{% asset_path beaker.svg %}" alt="Bearker">
+                    </div>
+                    <div class="card-header">
+                        {{ post.date | date: "%-d %b, %Y" }}
+                    </div>
+                    
+                    <div class="card-copy">
+                        <strong>{{ post.title }}</strong>
+                        {% if post.tease %} | {{ post.tease }}{% endif %}
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
     </section>
 </article>
