@@ -1,0 +1,8 @@
+.container {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.fingerprint .number {
+  color: #5e2023;
+}

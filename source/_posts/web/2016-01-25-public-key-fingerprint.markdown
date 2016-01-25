@@ -8,7 +8,7 @@ tags:
 title: Legible Public Key Fingerprint Display
 codepen: yeKyaz
 codepen-default-tab: js
-shorturl: http://myl.be/18
+shorturl: http://myl.be/1F
 ---
 
 Need a good way to display a public key fingerprint so it was easily legible.
