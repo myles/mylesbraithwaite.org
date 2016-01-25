@@ -1,5 +1,7 @@
 - slug: javascript
   title: JavaScript
+- slug: jquery
+  title: jQuery
 - slug: css
   title: CSS
   full: Cascading Style Sheets
