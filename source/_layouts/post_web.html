@@ -29,6 +29,6 @@ type: web
 
 {% if page.codepen %}
 <section class="results-codepen">
-    <iframe src="//codepen.io/mylesb/embed/{{ page.codepen }}?height=500{% if page.codepen-default-tab %}&default-tab={{ page.codepen-default-tab }}{% endif %}" height="500" frameborder="0" alllowtransparency="true" allowfullscreen="true"></iframe>
+    <iframe src="//codepen.io/{{ site.codepen_username }}/embed/{{ page.codepen }}?height=500{% if page.codepen_defaulttab %}&default-tab={{ page.codepen_defaulttab }}{% endif %}" height="500" frameborder="0" alllowtransparency="true" allowfullscreen="true"></iframe>
 </section>
 {% endif %}

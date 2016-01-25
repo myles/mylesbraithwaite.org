@@ -7,7 +7,7 @@ tags:
   - javascript
 title: Legible Public Key Fingerprint Display
 codepen: yeKyaz
-codepen-default-tab: js
+codepen_defaulttab: js
 shorturl: http://myl.be/1F
 ---
 
