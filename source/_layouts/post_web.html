@@ -26,3 +26,9 @@ type: web
     </div>
 </section>
 {% endif %}
+
+{% if page.codepen %}
+<section class="results-codepen">
+    <iframe src="//codepen.io/mylesb/embed/{{ page.codepen }}?height=500{% if page.codepen-default-tab %}&default-tab={{ page.codepen-default-tab }}{% endif %}" height="500" frameborder="0" alllowtransparency="true" allowfullscreen="true"></iframe>
+</section>
+{% endif %}
