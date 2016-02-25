@@ -6,7 +6,7 @@ category: python
 tags: [python, md5]
 title: Dictonary Attack with Python
 lead: A simple Python script for doing a MD5 dictonary attack.
-shorturl: http://myl.be/I
+shorturl: http://myl.be/1-
 ---
 
 Used this as an example of why you should have a secure password.
