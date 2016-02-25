@@ -10,6 +10,11 @@ module.exports = function (grunt) {
                 '**/*.html',
                 '!uploads/**/*.html'
             ],
+            brace_style: 'expand',
+            unformatted: [
+                'pre',
+                'code'
+            ],
             dest: 'build'
         }
     };

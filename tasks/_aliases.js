@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         'jekyll:prod',
         'copy:build',
         'favicons',
-        'prettify',
+        // 'prettify',
         's3',
         'rsync:prod',
         'clean'
