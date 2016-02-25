@@ -47,6 +47,8 @@
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
       width: 100%;
+      max-height: 125px;
+      margin-top: 12px;
       opacity: 1;
     }
   }

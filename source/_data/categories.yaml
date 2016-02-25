@@ -2,9 +2,16 @@
   title: Web Development
   short: Web
   weight: 2
+  feature: true
 - slug: python
   title: Python
   weight: 1
+  feature: true
+  image: python.svg
 - slug: five-little-monkeys
   title: Five Little Monkeys
   subtitle: <a href="https://github.com/myles/five-little-monkeys">Five Little Monkeys</a> was a project I started to learn a new programming language.
+  feature: false
+- slug: til
+  title: Today I Learned
+  feature: false

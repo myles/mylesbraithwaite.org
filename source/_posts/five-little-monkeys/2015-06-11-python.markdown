@@ -7,6 +7,7 @@ category: five-little-monkeys
 tags: [python, five-little-monkeys]
 title: Five Little Monkeys in Python
 simpletitle: Python
+image: python.svg
 ---
 
 ```python

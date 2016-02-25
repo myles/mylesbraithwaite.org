@@ -54,7 +54,13 @@ robots: 'noindex, follow'
             <div class="card">
                 <a href="{{ post.url }}">
                     <div class="card-image">
-                        <img src="{% asset_path beaker.svg %}" alt="Bearker">
+                        {% if post.image %}
+                        <img src="{% asset_path {{post.image}} %}" alt="{{ post.title }}">
+                        {% elsif category.image %}
+                        <img src="{% asset_path {{category.image}} %}" alt="{{ post.title }}">
+                        {% else %}
+                        <img src="{% asset_path beaker.svg %}" alt="{{ post.title }}">
+                        {% endif %}
                     </div>
                     <div class="card-header">
                         {{ post.date | date: "%-d %b, %Y" }}

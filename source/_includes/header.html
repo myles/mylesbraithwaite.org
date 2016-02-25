@@ -15,6 +15,7 @@
                 </li>
                 {% assign categories = site.data.categories | sort: 'weight', 'last' %}
                 {% for category in categories %}
+                {% if category.feature %}
                 <li class="nav-link {{ category.slug }}">
                     <a href="/{{ category.slug }}/" {% if category.short %}title="{{ category.title }}"{% endif %}>
                         {% if category.short %}
@@ -24,6 +25,7 @@
                         {% endif %}
                     </a>
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </nav>
