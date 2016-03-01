@@ -41,7 +41,8 @@
         {% include head_schema.html %}
         
         {% if page.categories %}
-        <link rel="amphtml" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}amp/">
+        <!-- Disabling AMP pages for now. -->
+        <!-- <link rel="amphtml" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}amp/"> -->
         {% endif %}
     </head>
     <body>

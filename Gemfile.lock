@@ -59,6 +59,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
+    mini_portile2 (2.0.0)
     multi_css (0.1.0)
       css_press
     multi_js (0.1.0)
@@ -66,6 +67,8 @@ GEM
     neat (1.7.2)
       bourbon (>= 4.0)
       sass (>= 3.3)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
     puma (2.15.3)
     rack (1.6.4)
     rack-contrib (1.4.0)
@@ -99,6 +102,7 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   coffee-script
+  fastimage
   jekyll
   jekyll-archives
   jekyll-assets
@@ -106,9 +110,13 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-typogrify
   neat
+  nokogiri
   puma
   rack-contrib
   redcarpet
   sass
   uglifier
   yui-compressor
+
+BUNDLED WITH
+   1.10.6

@@ -5,7 +5,28 @@
                 "@type": "BlogPosting",
                 "@id": {{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | jsonify }},
                 "headline": {{ page.title | jsonify }},
-                "datePublished": {{ page.date | jsonify }}
+                "datePublished": {{ page.date | jsonify }},
+                {% if page.updated %}"dateModified": {{ page.updated | jsonify }},{% endif %}
+                "author": {
+                    "@type": "Person",
+                    "name": "Myles Braithwaite"
+                },
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "{{ site.cdn_baseurl | prepend: site.cdn_url }}{% asset_path "beaker.png" %}",
+                    "width": "512",
+                    "height": "512"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Myles Braithwaite's Programming Laboratory",
+                    "email": "me@mylesbraithwaite.org",
+                    "url": "http://mylesbraithwaite.org/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{ site.cdn_baseurl | prepend: site.cdn_url }}{% asset_path "logotype.svg" %}"
+                    }
+                }
             }
         </script>
 {% endif %}

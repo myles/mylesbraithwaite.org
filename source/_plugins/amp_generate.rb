@@ -6,8 +6,11 @@ module Jekyll
 			@base = base
 			@dir = dir
 			@name = 'amp.html'
+			
 			self.process(@name)
+			
 			self.read_yaml(File.join(base, '_layouts'), 'amp.html')
+			
 			self.data['body'] = post.content
 			self.data['title'] = post.data['title']
 			self.data['date'] = post.data['date']
@@ -16,6 +19,7 @@ module Jekyll
 			self.data['canonical_url'] = post.url
 		end
 	end
+	
 	# Generates a new AMP post for each existing post
 	class AmpGenerator < Generator
 		priority :low

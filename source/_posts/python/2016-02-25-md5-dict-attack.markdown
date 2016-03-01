@@ -4,8 +4,8 @@ date: 2016-02-25 14:47
 public: true
 category: python
 tags: [python, md5]
-title: Dictonary Attack with Python
-lead: A simple Python script for doing a MD5 dictonary attack.
+title: Dictionary Attack with Python
+lead: A simple Python script for doing a MD5 dictionary attack.
 shorturl: http://myl.be/1-
 ---
 

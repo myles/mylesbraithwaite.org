@@ -16,5 +16,8 @@ gem 'redcarpet'
 gem 'coffee-script'
 gem 'yui-compressor'
 
+gem 'nokogiri'
+gem 'fastimage'
+
 gem 'puma'
 gem 'rack-contrib'

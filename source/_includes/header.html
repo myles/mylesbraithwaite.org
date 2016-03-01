@@ -33,7 +33,7 @@
         <div class="elsewhere">
             <ul id="js-elsewhere-menu" class="elsewhere-menu show">
                 {% for link in site.data.masthead-links.elsewhere %}
-                <li class="nav-link {{ list.slug }}"><a href="{{ link.url }}">{{ link.name | improve }}</a></li>
+                <li class="nav-link {{ list.slug }}"><a href="{{ link.url }}" rel="me">{{ link.name | improve }}</a></li>
                 {% endfor %}
             </ul>
         </div>
