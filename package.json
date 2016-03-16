@@ -1,6 +1,11 @@
 {
-  "name": "red_myles_www",
+  "name": "mylesbraithwaite.org-www",
   "version": "1.0.0",
+  "private": true,
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/myles/mylesbraithwaite.org.git"
+  },
   "devDependencies": {
     "grunt-aws": "^0.6.1",
     "grunt-contrib-clean": "^0.7.0",
