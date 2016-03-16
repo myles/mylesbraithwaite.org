@@ -17,6 +17,12 @@ Handlebars.registerHelper 'dateFormat', (context, block) ->
 $(document).ready ->
   GoogleAnalytics.init 'UA-1642439-40'
   
+  $('a[href^="http://"],a[href^="https://"]')
+      .not("[href*='#{location.hostname}']")
+      .click (e) ->
+    
+    GoogleAnalytics.trackEvent 'external', 'click', $(this).attr('href')
+  
   if MylesLabPageDetails.date
     date_year = MylesLabPageDetails.date.substring(0, 4)
     date_month = MylesLabPageDetails.date.substring(0, 7)
@@ -63,6 +69,7 @@ $(document).ready ->
     return
   
   $('.demo-link').on 'click', ->
+    GoogleAnalytics.trackEvent 'demo', 'click', $(this).attr('title')
     window.open $(this).attr('href'), $(this).attr('title'), 'width=800,height=600,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0'
     return false
   
