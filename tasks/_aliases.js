@@ -26,12 +26,13 @@ module.exports = function (grunt) {
 
     grunt.registerTask('deploy', [
         'clean',
-        'jekyll:prod',
-        'copy:build',
         'favicons',
+        'jekyll:prod',
+        'favicons',
+        'copy:build',
         // 'prettify',
-        's3',
         'rsync:prod',
+        's3',
         'clean'
     ]);
 
