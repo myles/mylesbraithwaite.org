@@ -22,18 +22,18 @@ layout: default
     {% endif %}
 </div>
 
-<article class="type-{{ category.slug }}">
+<article class="type-{{ category.slug }} h-entry">
     <!-- <p class="type">{{ category.title }}</p> -->
     
     <header>
-        <h1>{{ page.title | improve }}</h1>
+        <h1 class="p-name">{{ page.title | improve }}</h1>
         
         {% if page.lead %}<h2>{{ page.lead | improve }}</h2>{% endif %}
         
         <p class="meta">
-            Published: {{ page.date | date_to_long_string }}
+            Published: <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
             {% if page.updated %}
-            | Updated: {{ page.updated | date_to_long_string }}
+            | Updated: <time datetime="{{ page.updated | date_to_xmlschema }}">{{ page.updated | date_to_long_string }}</time>
             {% endif %}
             {% if page.tags %}
             | Tags:
@@ -44,12 +44,14 @@ layout: default
                 
                 {% if forloop.last %} and{% endif %}
                 
-                {% if tag %}<a href="/tag/{{ tag.slug }}/" rel="tag">{% if tag.full %}<acronym title="{{ tag.full }}">{{ tag.title | improve }}</acronym>{% else %}{{ tag.title | improve }}{% endif %}</a>{% else %}<a href="/tag/{{ tag_slug }}/" rel="tag">{{ tag_slug | improve }}</a>{% endif %}{% if forloop.last == false %},{% endif %}
+                {% if tag %}<a href="/tag/{{ tag.slug }}/" rel="tag" class="p-category">{% if tag.full %}<acronym title="{{ tag.full }}">{{ tag.title | improve }}</acronym>{% else %}{{ tag.title | improve }}{% endif %}</a>{% else %}<a href="/tag/{{ tag_slug }}/" rel="tag">{{ tag_slug | improve }}</a>{% endif %}{% if forloop.last == false %},{% endif %}
             {% endfor %}
         </p>
     </header>
     
-    {{ content }}
+    <div class="e-content">
+        {{ content }}
+    </div>
     
     <section id="js-commits" class="changes"></section>
     

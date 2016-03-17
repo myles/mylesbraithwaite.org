@@ -34,7 +34,7 @@ module.exports = function (grunt) {
             options: {
                 build: true,
                 draft: true,
-                config: 'config/base.yml,config/staging.yml',
+                config: 'config/base.yml,config/draft.yml',
                 dest: '/srv/www/mylesbraithwaite.org/draft/html/'
             }
         },

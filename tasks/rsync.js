@@ -8,8 +8,8 @@ module.exports = function (grunt) {
         prod: {
             options: {
                 src: "./build/",
-                dest: "/srv/www/org_mylesbraithwaite_www/html",
-                host: "panda",
+                dest: "/srv/www/mylesbraithwaite.org/www/html",
+                host: "bear",
                 delete: true,
                 recursive: true,
                 ssh: true

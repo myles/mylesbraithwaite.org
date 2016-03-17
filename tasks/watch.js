@@ -30,12 +30,12 @@ module.exports = function (grunt) {
         },
         draft: {
             files: [
-                'source/*',
                 'source/**/*',
                 '!source/_uploads'
             ],
             tasks: [
-                'jekyll:draft'
+                'jekyll:draft',
+                'copy:draft'
             ],
             options: {
                 livereload: true
