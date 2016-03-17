@@ -41,7 +41,7 @@ $(document).ready ->
         title = category.short
       else
         title = category.title
-      GoogleAnalytics.trackEvent category.slug, category.slug, title
+      GoogleAnalytics.trackEvent 'category', category.slug, 'Category'
   
   if $('#js-commits').length
     github_url = 'https://api.github.com/repos/myles' +
