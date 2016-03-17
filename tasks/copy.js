@@ -17,6 +17,14 @@ module.exports = function (grunt) {
                 src: ['**'],
                 dest: '/Users/Myles/Sites/sites/mylesbraithwaite-org/html/uploads/'
             }]
+        },
+        draft: {
+            files: [{
+                expand: true,
+                cwd: 'source/_uploads/',
+                src: ['**'],
+                dest: '/srv/www/mylesbraithwaite.org/draft/html/uploads/'
+            }]
         }
     };
 

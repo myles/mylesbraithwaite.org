@@ -27,6 +27,19 @@ module.exports = function (grunt) {
             options: {
                 livereload: true
             }
+        },
+        draft: {
+            files: [
+                'source/*',
+                'source/**/*',
+                '!source/_uploads'
+            ],
+            tasks: [
+                'jekyll:draft'
+            ],
+            options: {
+                livereload: true
+            }
         }
     };
 
