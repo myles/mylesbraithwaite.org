@@ -36,7 +36,7 @@ module.exports = function (grunt) {
                 config: 'config/base.yml,config/draft.yml',
                 dest: '/srv/www/mylesbraithwaite.org/draft/html/'
             }
-        }
+        },
         heroku: {
             options: {
                 build: true,

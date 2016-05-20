@@ -39,11 +39,6 @@
         {% include head_facebook.html %}
         
         {% include head_schema.html %}
-        
-        {% if page.categories %}
-        <!-- Disabling AMP pages for now. -->
-        <!-- <link rel="amphtml" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}amp/"> -->
-        {% endif %}
     </head>
     <body>
         {% include header.html %}
@@ -61,7 +56,6 @@
         <script type="text/javascript">
             window.MylesLabPageDetails = {
                 {% if page.id %}id: {{ page.id | jsonify }},{% endif %}
-                {% if page.url %}url: {{ page.url | jsonify }},{% endif %}
                 {% if page.title %}title: {{ page.title | jsonify }},{% endif %}
                 {% if page.date %}date: {{ page.date | jsonify }},{% endif %}
                 {% if page.tags %}tags: {{ page.tags | jsonify }},{% endif %}

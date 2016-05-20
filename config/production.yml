@@ -4,7 +4,6 @@ cdn_baseurl: "uploads"
 weblab_url: "http://lab.mylesbraithwaite.com"
 
 assets:
-  js_compressor: uglifier
-  css_compressor: yui
-  debug: false
-  gzip: [ text/css, application/javascript, image/svg+xml ]
+  compress:
+    css: true
+    js: true
