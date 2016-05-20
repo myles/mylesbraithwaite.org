@@ -1,0 +1,23 @@
+#!/bin/sh
+
+#!/bin/sh
+
+if ! [ -f `which bundle` ]; then
+    echo 'Bundler is required to install the Ruby dependencies.';
+fi
+
+if ! [ -f `which npm` ]; then
+    echo 'npm is required to install the Node.js dependencies.';
+fi
+
+if ! [ -f `which bower` ]; then
+    echo 'bower is required to install the assets dependencies.';
+fi
+
+bundle install
+npm install
+bower install
+
+if ! [ -f `which grunt` ]; then
+    echo 'Grunt is required to run the build command.';
+fi

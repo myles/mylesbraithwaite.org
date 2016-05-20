@@ -7,12 +7,12 @@
       "url": "git://github.com/myles/mylesbraithwaite.org.git"
   },
   "devDependencies": {
-    "grunt-contrib-clean": "^0.7.0",
-    "grunt-contrib-connect": "^0.11.2",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-favicons": "^0.7.0",
-    "grunt-jekyll": "^0.4.2",
-    "grunt-rsync": "^0.6.2"
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-favicons": "^0.8.0",
+    "grunt-jekyll": "^0.4.4",
+    "grunt-rsync": "^1.0.1"
   }
 }

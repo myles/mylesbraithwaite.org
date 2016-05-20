@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('develop', [
         'jekyll:devel',
-        'copy:build',
+        'copy:uploads',
         'connect',
         'watch:devel'
     ]);

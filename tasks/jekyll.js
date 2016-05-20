@@ -17,7 +17,7 @@ module.exports = function (grunt) {
                 auto: true
             }
         },
-        develop: {
+        devel: {
             options: {
                 build: true,
                 config: 'config/base.yml,config/devel.yml'
