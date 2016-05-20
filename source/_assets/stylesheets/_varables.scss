@@ -1,9 +1,34 @@
+// Breakpoints
+$medium-screen: 600px;
+$large-screen: 900px;
+
+// Typography
+$font-stack-system: "Proxima Nova", $helvetica;
+$base-font-family: $font-stack-system;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #1565c0;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
 $action-color: $blue;
 $base-background-color: $dark-gray;
 $main-background-color: #fff;
-
-$base-font-family: "Proxima Nova", $helvetica;
-$heading-font-family: "Proxima Nova", $base-font-family;
 
 // ####################################
 // Beaker
@@ -37,7 +62,7 @@ $imprint-disclaimer-color: transparentize($imprint-color, 0.6);
 // ####################################
 // Breadcrumb
 // ####################################
-$breadcrumb-border-color: $base-border-color;
+$breadcrumb-border-color: $light-gray;
 $breadcrumb-border: 1px solid $breadcrumb-border-color;
 $breadcrumb-height: $base-spacing * 1.5;
 $breadcrumb-arrow-color: $breadcrumb-border-color;

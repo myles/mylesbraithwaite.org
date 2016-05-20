@@ -1,6 +1,4 @@
 gems:
-  - bourbon
-  - neat
   - jekyll-sitemap
   - jekyll-archives
 
@@ -9,10 +7,8 @@ source: source
 destination: build
 
 assets:
-  dirname: assets
-  baseurl: /assets/
-  cachebust: soft
-  source:
+  sources:
+    - _assets/bower
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
@@ -33,6 +29,19 @@ jekyll-archives:
     day: '/:year/:month/:day/'
     tag: '/tag/:name/'
     category: '/:name/'
+
+jekyll_pages_api_search:
+  index_fields:
+    title:
+      boost: 10
+    subtitle:
+      boost: 10
+    tags:
+      boost: 10
+    url:
+      boost: 5
+    body:
+      boost: 1
 
 # Site settings
 title: "Myles' Lab"

@@ -1,3 +1,6 @@
+$medium-screen-up: new-breakpoint(min-width $medium-screen 8);
+$large-screen-up: new-breakpoint(min-width $large-screen 12);
+
 * {
 	margin: 0;
 }

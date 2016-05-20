@@ -1,10 +1,11 @@
 @import "vendor/normalize";
 
-@import "bourbon";
-@import "neat";
-@import "base/base";
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "neat/app/assets/stylesheets/neat";
 
 @import "varables";
+
+@import "bitters/core/base";
 
 @import "layout";
 @import "global";

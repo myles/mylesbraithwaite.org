@@ -38,7 +38,6 @@ module.exports = function (grunt) {
         'copy:build',
         // 'prettify',
         'rsync:prod',
-        's3',
         'clean'
     ]);
 

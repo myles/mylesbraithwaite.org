@@ -5,3 +5,4 @@
 /node_modules/
 .aws.json
 /source/.asset-cache/
+/source/_assets/bower/

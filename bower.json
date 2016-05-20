@@ -1,0 +1,13 @@
+{
+  "name": "mylesbraithwaite.org-www",
+  "authors": [
+    "Myles Braithwaite <me@mylesbraithwaite.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/myles/mylesbraithwaite.org",
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "neat": "^1.7.4",
+    "bitters": "^1.3.1"
+  }
+}
