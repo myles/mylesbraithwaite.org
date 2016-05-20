@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: 'source/_uploads/',
                 src: ['**'],
-                dest: '/srv/www/mylesbraithwaite.org/draft/uploads/'
+                dest: '/srv/www/mylesbraithwaite.org/draft/html/uploads/'
             }]
         }
     };
