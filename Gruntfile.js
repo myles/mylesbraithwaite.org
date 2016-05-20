@@ -2,7 +2,6 @@ module.exports = function (grunt) {
     'use strict';
 
     grunt.initConfig({
-        aws: grunt.file.readJSON('.aws.json'),
         config: grunt.file.readYAML('config/base.yml')
     });
 
