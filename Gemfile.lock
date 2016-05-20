@@ -19,7 +19,6 @@ GEM
       addressable (~> 2)
     ffi (1.9.10)
     forwardable-extended (2.6.0)
-    git-version-bump (0.15.1)
     html_press (0.8.2)
       htmlentities
       multi_css (>= 0.1.0)
@@ -75,11 +74,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    puma (3.4.0)
     rack (1.6.4)
-    rack-contrib (1.4.0)
-      git-version-bump (~> 0.15)
-      rack (~> 1.4)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -113,8 +108,6 @@ DEPENDENCIES
   jekyll-typogrify
   jekyll_pages_api_search
   nokogiri
-  puma
-  rack-contrib
   redcarpet
   sass
   uglifier

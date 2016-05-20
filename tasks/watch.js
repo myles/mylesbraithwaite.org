@@ -2,7 +2,7 @@ module.exports = function (grunt) {
     'use strict';
 
     var config = {
-        development: {
+        devel: {
             files: [
                 'source/*',
                 'source/**/*',
@@ -10,32 +10,6 @@ module.exports = function (grunt) {
             ],
             tasks: [
                 'jekyll:build'
-            ],
-            options: {
-                livereload: true
-            }
-        },
-        staging: {
-            files: [
-                'source/*',
-                'source/**/*'
-            ],
-            tasks: [
-                'jekyll:staging',
-                'copy:staging'
-            ],
-            options: {
-                livereload: true
-            }
-        },
-        draft: {
-            files: [
-                'source/**/*',
-                '!source/_uploads'
-            ],
-            tasks: [
-                'jekyll:draft',
-                'copy:draft'
             ],
             options: {
                 livereload: true

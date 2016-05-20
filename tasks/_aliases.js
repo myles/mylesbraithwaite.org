@@ -1,45 +1,25 @@
 module.exports = function (grunt) {
     'use strict';
 
-    grunt.registerTask('run', [
-        'jekyll:development',
+    grunt.registerTask('develop', [
+        'jekyll:devel',
         'copy:build',
         'connect',
-        'watch:development'
+        'watch:devel'
     ]);
 
     grunt.registerTask('build', [
-        'jekyll:build',
-        'copy:build'
-    ]);
-
-    grunt.registerTask('staging', [
-        'jekyll:staging',
-        'copy:staging',
-        'watch:staging'
-    ]);
-
-    grunt.registerTask('draft', [
-        'jekyll:draft',
-        'copy:draft',
-        'watch:draft'
-    ]);
-
-    grunt.registerTask('heroku', [
-        'jekyll:heroku',
-        'copy:build'
+        'clean',
+        'jekyll:prod',
+        'favicons',
+        'copy:uploads'
     ]);
 
     grunt.registerTask('deploy', [
-        'clean',
-        'favicons',
-        'jekyll:prod',
-        'favicons',
-        'copy:build',
-        // 'prettify',
+        'build',
         'rsync:prod',
         'clean'
     ]);
 
-    grunt.registerTask('default', ['run']);
+    grunt.registerTask('default', ['develop']);
 };

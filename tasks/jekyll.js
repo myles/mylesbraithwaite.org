@@ -17,37 +17,16 @@ module.exports = function (grunt) {
                 auto: true
             }
         },
-        development: {
+        develop: {
             options: {
                 build: true,
-                config: 'config/base.yml,config/development.yml'
-            }
-        },
-        staging: {
-            options: {
-                build: true,
-                config: 'config/base.yml,config/staging.yml',
-                dest: '~/Sites/sites/mylesbraithwaite-org/html/'
-            }
-        },
-        draft: {
-            options: {
-                build: true,
-                draft: true,
-                config: 'config/base.yml,config/draft.yml',
-                dest: '/srv/www/mylesbraithwaite.org/draft/html/'
-            }
-        },
-        heroku: {
-            options: {
-                build: true,
-                config: 'config/base.yml,config/heroku.yml'
+                config: 'config/base.yml,config/devel.yml'
             }
         },
         prod: {
             options: {
                 build: true,
-                config: 'config/base.yml,config/production.yml'
+                config: 'config/base.yml,config/prod.yml'
             }
         }
     };
