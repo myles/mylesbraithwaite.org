@@ -8,7 +8,7 @@ tags:
   - social-insurance-number
 title: Check for a Valid SIN Number
 demo: index.html
-shorturl: http://myl.be/18
+shorturl: https://myl.be/df
 ---
 
 ```javascript
