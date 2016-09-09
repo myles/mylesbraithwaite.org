@@ -15,7 +15,6 @@ gem 'sass'
 gem 'uglifier'
 gem 'redcarpet'
 gem 'coffee-script'
-gem 'yui-compressor'
 
 gem 'nokogiri'
 gem 'fastimage'
