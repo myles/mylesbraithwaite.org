@@ -7,6 +7,7 @@ tags: [python, itunes, applescript]
 title: What's Playing on iTunes
 lead: A simple Python script to tell you what's currently playing on iTunes.
 shorturl: https://myl.be/9c
+crosspost_to_medium: true
 ---
 
 I got [really angry at Last.fm](https://twitter.com/mylesb/status/733664737347538944) today so I wanted to see how hard it was to duplicate it's Scrobbler feature (the only useful feature in Last.fm). So I wrote a simple script that uses [subprocess](https://docs.python.org/3/library/subprocess.html) and [osascript](http://ss64.com/osx/osascript.html) (a command line AppleScript).

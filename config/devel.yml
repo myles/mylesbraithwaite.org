@@ -3,3 +3,6 @@ baseurl: ""
 cdn_url: ""
 cdn_baseurl: "uploads"
 weblab_url: "http://127.0.0.1:8000"
+
+jekyll-crosspost_to_medium:
+  enabled: false

@@ -9,6 +9,7 @@ group :jekyll_plugins do
   gem 'jekyll-typogrify'
   gem 'jekyll-minify-html'
   gem 'jekyll_pages_api_search'
+  gem 'jekyll-crosspost-to-medium'
 end
 
 gem 'sass'

@@ -7,6 +7,7 @@ tags: [python, md5]
 title: Dictionary Attack with Python
 lead: A simple Python script for doing a MD5 dictionary attack.
 shorturl: http://myl.be/1-
+crosspost_to_medium: true
 ---
 
 Used this as an example of why you should have a secure password.

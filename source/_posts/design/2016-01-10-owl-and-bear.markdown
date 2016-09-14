@@ -5,6 +5,7 @@ public: true
 tags: [design, affinity-designer]
 title: Owl and Bear
 shorturl: http://myl.be/13
+crosspost_to_medium: true
 ---
 
 Was un-inspired at the [HackLab](https://hacklab.to/ "HackLab Toronto") a few nights ago so I made a couple of animal icons in [Affinity Designer](https://affinity.serif.com/en-gb/).

@@ -7,3 +7,13 @@ assets:
   compress:
     css: true
     js: true
+
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspst_to_medium
+  status: public
+  license: cc-40-zero
+  text: >
+           <p><i>This article was originally published on
+           <a href="{{ url }}" rel="canonical">Myles' Lab</a>.</i></p>
+  backdate: true

@@ -9,10 +9,12 @@ tags:
 title: Check for a Valid SIN Number
 demo: index.html
 shorturl: https://myl.be/df
+crosspost_to_medium: true
 ---
 
 ```javascript
 function validate_sin (sin) {
+    // Basic check to see if the SIN is nine characters.
     if (sin.length != 9) {
         console.log('SIN number to short.');
         return false;
