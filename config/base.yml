@@ -30,19 +30,6 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/:name/'
 
-jekyll_pages_api_search:
-  index_fields:
-    title:
-      boost: 10
-    subtitle:
-      boost: 10
-    tags:
-      boost: 10
-    url:
-      boost: 5
-    body:
-      boost: 1
-
 # Site settings
 title: "Myles' Lab"
 description: Myles Braithwaite's Programming Laboratory.
