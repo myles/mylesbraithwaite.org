@@ -8,10 +8,6 @@ GEM
     coffee-script-source (1.10.0)
     colorator (0.1)
     concurrent-ruby (1.0.2)
-    css_press (0.3.2)
-      csspool-st (= 3.1.2)
-      json
-    csspool-st (3.1.2)
     execjs (2.7.0)
     extras (0.1.0)
       forwardable-extended (~> 2.5)
@@ -19,11 +15,6 @@ GEM
       addressable (~> 2)
     ffi (1.9.10)
     forwardable-extended (2.6.0)
-    html_press (0.8.2)
-      htmlentities
-      multi_css (>= 0.1.0)
-      multi_js (>= 0.1.0)
-    htmlentities (4.3.4)
     jekyll (3.1.6)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
@@ -42,9 +33,6 @@ GEM
       pathutil (>= 0.8)
       sprockets (~> 3.3)
     jekyll-crosspost-to-medium (0.1.14)
-    jekyll-minify-html (1.1.0)
-      html_press (~> 0.8.2)
-      jekyll (>= 0.12)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-sitemap (0.10.0)
@@ -53,12 +41,6 @@ GEM
       typogruby
     jekyll-watch (1.4.0)
       listen (~> 3.0, < 3.1)
-    jekyll_pages_api (0.1.6)
-      htmlentities (~> 4.3)
-      jekyll (>= 2.0, < 4.0)
-    jekyll_pages_api_search (0.4.4)
-      jekyll_pages_api (~> 0.1.4)
-      sass (~> 3.4)
     json (2.0.1)
     kramdown (1.11.1)
     liquid (3.0.6)
@@ -67,10 +49,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
     mini_portile2 (2.1.0)
-    multi_css (0.1.0)
-      css_press
-    multi_js (0.1.0)
-      uglifier (~> 2)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -106,10 +84,8 @@ DEPENDENCIES
   jekyll-archives
   jekyll-assets
   jekyll-crosspost-to-medium
-  jekyll-minify-html
   jekyll-sitemap
   jekyll-typogrify
-  jekyll_pages_api_search
   nokogiri
   redcarpet
   sass
