@@ -7,7 +7,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-archives'
   gem 'jekyll-typogrify'
-  gem 'jekyll-crosspost-to-medium'
 end
 
 gem 'sass'

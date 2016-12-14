@@ -1,3 +1,4 @@
 require 'jekyll-assets'
 require 'jekyll-sitemap'
-require 'jekyll-crosspost-to-medium'
+require 'jekyll-archives'
+require 'jekyll-typogrify'

@@ -1,11 +1,17 @@
-gems:
-  - jekyll-sitemap
-  - jekyll-archives
+# Site settings
+title: "Myles' Lab"
+description: Myles Braithwaite's Programming Laboratory.
+permalink: /:year/:month/:day/:title/
+
+# Author information
+author: Myles Braithwaite
+email: me@mylesbraithwaite.org
 
 # Structure configuration
 source: source
 destination: build
 
+# Jekyll-Assets configuration
 assets:
   sources:
     - _assets/bower
@@ -15,6 +21,7 @@ assets:
     - _assets/stylesheets
   debug: true
 
+# Jekyll-Archives configuration
 jekyll-archives:
   enabled: all
   layouts:
@@ -30,20 +37,13 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/:name/'
 
-# Site settings
-title: "Myles' Lab"
-description: Myles Braithwaite's Programming Laboratory.
-permalink: /:year/:month/:day/:title/
-
-# Author information
-author: Myles Braithwaite
-email: me@mylesbraithwaite.org
-
 # URL settings
 url: "http://127.0.0.1:4000"
 baseurl: ""
+
 cdn_url: ""
 cdn_baseurl: "uploads"
+
 weblab_url: "http://127.0.0.1:8000"
 
 # Build settings
