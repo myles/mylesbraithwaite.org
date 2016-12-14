@@ -9,7 +9,7 @@ module.exports = function (grunt) {
             options: {
                 src: "./build/",
                 dest: "/srv/www/mylesbraithwaite.org/www/html",
-                host: "bear",
+                host: "bear.mylesbraithwaite.com",
                 delete: true,
                 recursive: true,
                 ssh: true
