@@ -7,6 +7,7 @@
       "url": "git://github.com/myles/mylesbraithwaite.org.git"
   },
   "devDependencies": {
+    "grunt-cli": "^1.3.2",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
