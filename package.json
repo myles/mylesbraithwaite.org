@@ -14,6 +14,6 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-favicons": "^0.8.0",
     "grunt-jekyll": "^0.4.4",
-    "grunt-rsync": "^1.0.1"
+    "grunt-rsync": "^3.0.0"
   }
 }
